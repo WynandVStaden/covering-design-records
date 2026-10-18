@@ -1,5 +1,5 @@
 #!/bin/bash
-# Run the shrink search on many entries in parallel.
+# Run the v2 shrink search on many entries in parallel (no limit on how far each cover shrinks).
 #
 # usage: bash scripts/run_batch.sh <seconds_per_entry> <jobs_file> [parallel_jobs]
 #
@@ -9,7 +9,7 @@
 # For each entry the solver shrinks the cover for the given time and saves every full cover it reaches
 # into results/C_v_k_t/. The log line reports the smallest full cover found.
 SECS=${1:?seconds per entry}; JOBS=${2:?jobs file}; P=${3:-$(nproc)}
-BIN=$(dirname "$0")/../wls128
+BIN=$(dirname "$0")/wls2
 mkdir -p results
 tr -d '\r' < "$JOBS" | xargs -P "$P" -L 1 bash -c '
   out=$("'"$BIN"'" $0 $1 $2 $3 '"$SECS"' 1 $4 7 0.05 1 2>/dev/null)
