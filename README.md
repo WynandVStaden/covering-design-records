@@ -1,6 +1,6 @@
 # Covering design records by weighted local search
 
-This repository holds the code behind **401 current records for covering numbers C(v,k,t)** (128 from v1, 273 from v2) on the [Covering Repository](https://www.coveringrepository.com) (October 2026). [RECORDS.md](RECORDS.md) lists every entry, its previous value, and which solver found it.
+This repository holds the code behind **491 current records** on the [Covering Repository](https://www.coveringrepository.com) (checked 2026-10-19): 416 for covering numbers C(v,k,t) (104 still from v1, 312 from v2) and 75 for lottery coverings C(v,k,t,m). [RECORDS.md](RECORDS.md) lists every entry, its previous value, and which solver found it.
 
 A (v,k,t) covering design is a set of k-element blocks drawn from v points such that every t-element subset of the points lies in at least one block. C(v,k,t) is the smallest number of blocks possible. For most parameters the exact value is unknown, so the public tables record the best covering anyone has found.
 
@@ -8,7 +8,7 @@ A (v,k,t) covering design is a set of k-element blocks drawn from v points such 
 
 | Folder | What it is | Status |
 |---|---|---|
-| [`v1/`](v1/) | `wls128`: the first solver. Every record in RECORDS.md so far came from it. | Kept unchanged so the published records can be reproduced. |
+| [`v1/`](v1/) | `wls128`: the first solver. | Kept unchanged so the published records can be reproduced. |
 | [`v2/`](v2/) | `wls2`: same search, 11–18× faster thanks to incremental move scores. | Current solver. |
 | [`vktm/`](vktm/) | `wlsm2` (and the first version `wlsm`): solver for lottery coverings C(v,k,t,m). | Finds records on a targeted subset of the lottery table (see below). |
 | [`scripts/`](scripts/) | `verify.py` (independent checker for (v,k,t)), `table.py` (reads the site's table archive). | |
@@ -43,7 +43,7 @@ Two-minute runs from the same starting covers (previous record covers from the t
 | C(35,18,6) | 223 | 211 | **207** | 12 | 200 |
 | C(90,12,3) | 704 | 683 | **679** | 1,472 | 25,745 |
 
-All five v2 covers beat our own v1 records. A full v2 rerun over 3,251 entries then improved 312 table entries: 188 new records and 124 improvements of v1 records. They are marked `v2` in RECORDS.md.
+All five v2 covers beat our own v1 records. A full v2 rerun over 3,251 entries then improved 312 table entries: 188 new records and 124 improvements of v1 records. They are marked `v2` in RECORDS.md. A second pass of longer (600 s) runs, started from our own best covers on the 319 entries that had improved, shrank 249 of them further (1,629 blocks in total).
 
 v1's batch runs also stopped each entry after shrinking 40 blocks below the starting value. That cap is gone in v2. It had cut off C(54,13,4) at 706, which v2 takes to 666.
 
@@ -80,7 +80,7 @@ What we measured while tuning it on record covers:
 | same, t = 3, m = 4, v ≥ 40 | 11% |
 | same, t = 3, m = 4, v < 40 | 1% |
 
-So far this has produced 54 lottery improvements (e.g. C(78,9,3,4) 672 → 647, C(74,8,3,4) 784 → 765). They are not uploaded yet.
+This produced 75 lottery records, all verified exactly and now live on the site (e.g. C(78,9,3,4) 672 → 647, C(74,8,3,4) 784 → 765).
 
 **Limits.** wlsm2 stores about 14 bytes per m-subset, so it needs C(v,m) up to roughly 10^9 at most on a 16 GB machine. Most lottery records have far larger m: the median entry held by the table's largest contributor is C(52,5,5,19), with 7.6 × 10^13 m-subsets. Those need a method that never enumerates m-subsets (for example lazy constraint generation with a fast exact checker), which we have not built.
 
