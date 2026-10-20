@@ -19,8 +19,8 @@ SITE = 'https://www.coveringrepository.com/'
 UA = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36'}
 
 ORIGINS = [  # prefix of the source path in the working folder -> where the component comes from
-    ('keep/', 'own plain record (v1/v2 search, listed in search_plain.md)'),
-    ('mkeep/', 'own lottery record (wlsm2 search, listed in search_lottery.md)'),
+    ('keep/', 'own search covering (v1/v2)'),
+    ('mkeep/', 'own search covering (wlsm2)'),
     ('lotto4/leaves/', 'La Jolla Covering Repository archive (Zenodo 19735294)'),
     ('data/mrec/', 'Covering Repository (downloaded record)'),
     ('data/rec/', 'Covering Repository (downloaded record)'),

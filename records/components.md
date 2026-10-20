@@ -116,7 +116,7 @@ Every covering used as a building block by a derived covering, where it comes fr
 | [C_18_5_3_4_43.txt](../derived/components/C_18_5_3_4_43.txt) | 43 | Covering Repository (downloaded record) | equal | 3 | 42,8,5,8, 66,8,5,12, 90,8,5,16 |
 | [C_18_6_2_2_12.txt](../derived/components/C_18_6_2_2_12.txt) | 12 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 9 | 82,9,3,4, 83,9,3,4, 64,10,4,6, 64,11,4,6, 65,11,4,6, 66,11,4,6, 68,11,4,6, 70,11,4,6, 90,13,4,6 |
 | [C_18_8_2_2_7.txt](../derived/components/C_18_8_2_2_7.txt) | 7 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 5 | 81,13,3,4, 84,11,3,4, 85,11,3,4, 86,11,3,4, 87,11,3,4 |
-| [C_18_8_5_5_229.txt](../derived/components/C_18_8_5_5_229.txt) | 229 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 4 | 42,8,5,8, 66,8,5,12, 90,8,5,16, 18,10,10,13 |
+| [C_18_8_5_5_229.txt](../derived/components/C_18_8_5_5_229.txt) | 229 | own search covering (v1/v2) | equal | 4 | 42,8,5,8, 66,8,5,12, 90,8,5,16, 18,10,10,13 |
 | [C_18_9_3_3_16.txt](../derived/components/C_18_9_3_3_16.txt) | 16 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 82,9,3,4 |
 | [C_18_9_3_4_6.txt](../derived/components/C_18_9_3_4_6.txt) | 6 | Covering Repository (downloaded record) | equal | 1 | 83,9,3,4 |
 | [C_18_9_7_7_1250.txt](../derived/components/C_18_9_7_7_1250.txt) | 1250 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 34,9,9,19, 37,9,9,20 |
@@ -157,7 +157,7 @@ Every covering used as a building block by a derived covering, where it comes fr
 | [C_21_9_2_2_7.txt](../derived/components/C_21_9_2_2_7.txt) | 7 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 83,13,3,4, 84,13,3,4 |
 | [C_21_9_3_3_24.txt](../derived/components/C_21_9_3_3_24.txt) | 24 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 3 | 86,9,3,4, 88,9,3,4, 89,9,3,4 |
 | [C_21_9_3_4_11.txt](../derived/components/C_21_9_3_4_11.txt) | 11 | Covering Repository (downloaded record) | equal | 1 | 85,9,3,4 |
-| [C_21_9_6_6_1011.txt](../derived/components/C_21_9_6_6_1011.txt) | 1011 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 21,12,12,15 |
+| [C_21_9_6_6_1011.txt](../derived/components/C_21_9_6_6_1011.txt) | 1011 | own search covering (v1/v2) | equal | 1 | 21,12,12,15 |
 | [C_21_10_3_4_8.txt](../derived/components/C_21_10_3_4_8.txt) | 8 | Covering Repository (downloaded record) | equal | 3 | 88,11,3,4, 89,11,3,4, 90,11,3,4 |
 | [C_21_11_4_4_31.txt](../derived/components/C_21_11_4_4_31.txt) | 31 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 71,16,6,6 |
 | [C_21_12_8_8_755.txt](../derived/components/C_21_12_8_8_755.txt) | 755 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 32,9,9,20 |
@@ -200,7 +200,7 @@ Every covering used as a building block by a derived covering, where it comes fr
 | [C_23_8_5_5_755.txt](../derived/components/C_23_8_5_5_755.txt) | 755 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 10 | 48,8,5,8, 50,8,5,8, 27,12,7,7, 45,12,7,7, 54,12,7,13, 55,12,7,13, 82,12,7,19, 83,12,7,19, 42,14,8,8, 27,15,15,20 |
 | [C_23_9_5_5_455.txt](../derived/components/C_23_9_5_5_455.txt) | 455 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 40,14,8,8, 45,15,8,8 |
 | [C_23_11_4_4_42.txt](../derived/components/C_23_11_4_4_42.txt) | 42 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 73,16,6,6 |
-| [C_23_11_6_6_406.txt](../derived/components/C_23_11_6_6_406.txt) | 406 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 11 | 27,12,7,7, 45,12,7,7, 54,12,7,13, 55,12,7,13, 82,12,7,19, 83,12,7,19, 40,14,8,8, 42,14,8,8, 45,15,8,8, 23,12,12,17, 27,15,15,20 |
+| [C_23_11_6_6_406.txt](../derived/components/C_23_11_6_6_406.txt) | 406 | own search covering (v1/v2) | equal | 11 | 27,12,7,7, 45,12,7,7, 54,12,7,13, 55,12,7,13, 82,12,7,19, 83,12,7,19, 40,14,8,8, 42,14,8,8, 45,15,8,8, 23,12,12,17, 27,15,15,20 |
 | [C_23_12_7_7_703.txt](../derived/components/C_23_12_7_7_703.txt) | 703 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 7 | 27,12,7,7, 45,12,7,7, 54,12,7,13, 55,12,7,13, 82,12,7,19, 83,12,7,19, 27,15,15,20 |
 | [C_23_13_5_5_54.txt](../derived/components/C_23_13_5_5_54.txt) | 54 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 73,16,6,6 |
 | [C_23_13_7_7_319.txt](../derived/components/C_23_13_7_7_319.txt) | 319 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 3 | 40,14,8,8, 42,14,8,8, 45,15,8,8 |
@@ -216,18 +216,18 @@ Every covering used as a building block by a derived covering, where it comes fr
 | [C_24_8_5_5_759.txt](../derived/components/C_24_8_5_5_759.txt) | 759 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 8 | 40,8,5,8, 42,8,5,8, 43,8,5,8, 49,8,5,8, 64,8,5,12, 66,8,5,12, 88,8,5,16, 90,8,5,16 |
 | [C_24_9_6_7_705.txt](../derived/components/C_24_9_6_7_705.txt) | 705 | Covering Repository (downloaded record) | equal | 1 | 24,15,14,17 |
 | [C_24_12_4_4_31.txt](../derived/components/C_24_12_4_4_31.txt) | 31 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 74,16,6,6 |
-| [C_24_12_7_7_852.txt](../derived/components/C_24_12_7_7_852.txt) | 852 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 2 | 24,12,12,17, 26,12,12,18 |
+| [C_24_12_7_7_852.txt](../derived/components/C_24_12_7_7_852.txt) | 852 | own search covering (v1/v2) | equal | 2 | 24,12,12,17, 26,12,12,18 |
 | [C_24_13_5_5_64.txt](../derived/components/C_24_13_5_5_64.txt) | 64 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 74,16,6,6 |
-| [C_24_14_7_7_241.txt](../derived/components/C_24_14_7_7_241.txt) | 241 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 6 | 46,14,7,13, 47,14,7,13, 48,14,7,13, 49,14,7,13, 50,14,7,13, 24,10,10,17 |
+| [C_24_14_7_7_241.txt](../derived/components/C_24_14_7_7_241.txt) | 241 | own search covering (v1/v2) | equal | 6 | 46,14,7,13, 47,14,7,13, 48,14,7,13, 49,14,7,13, 50,14,7,13, 24,10,10,17 |
 | [C_24_14_8_8_590.txt](../derived/components/C_24_14_8_8_590.txt) | 590 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 3 | 30,10,10,20, 31,10,10,20, 26,12,12,18 |
 | [C_24_16_6_6_49.txt](../derived/components/C_24_16_6_6_49.txt) | 49 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 74,16,6,6 |
 | [C_25_3_2_2_100.txt](../derived/components/C_25_3_2_2_100.txt) | 100 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 3 | 88,6,4,6, 90,7,4,6, 57,12,5,6 |
 | [C_25_4_2_2_50.txt](../derived/components/C_25_4_2_2_50.txt) | 50 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 5 | 79,8,4,6, 85,8,4,6, 89,8,4,6, 90,8,4,6, 60,12,5,6 |
 | [C_25_5_2_2_30.txt](../derived/components/C_25_5_2_2_30.txt) | 30 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 5 | 90,9,3,4, 88,10,4,6, 58,12,5,6, 59,12,5,6, 72,14,5,6 |
-| [C_25_8_4_4_262.txt](../derived/components/C_25_8_4_4_262.txt) | 262 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 83,8,4,9 |
+| [C_25_8_4_4_262.txt](../derived/components/C_25_8_4_4_262.txt) | 262 | own search covering (v1/v2) | equal | 1 | 83,8,4,9 |
 | [C_25_8_5_5_1116.txt](../derived/components/C_25_8_5_5_1116.txt) | 1116 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 4 | 44,8,5,8, 48,8,5,8, 49,8,5,8, 51,8,5,8 |
 | [C_25_9_3_3_38.txt](../derived/components/C_25_9_3_3_38.txt) | 38 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 90,9,3,4 |
-| [C_25_11_5_5_223.txt](../derived/components/C_25_11_5_5_223.txt) | 223 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 25,14,14,20 |
+| [C_25_11_5_5_223.txt](../derived/components/C_25_11_5_5_223.txt) | 223 | own search covering (v1/v2) | equal | 1 | 25,14,14,20 |
 | [C_25_14_7_7_377.txt](../derived/components/C_25_14_7_7_377.txt) | 377 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 49,14,7,13 |
 | [C_26_5_3_4_137.txt](../derived/components/C_26_5_3_4_137.txt) | 137 | Covering Repository (downloaded record) | equal | 5 | 51,8,5,8, 52,8,5,8, 53,8,5,8, 55,8,5,8, 85,8,5,12 |
 | [C_26_6_2_2_24.txt](../derived/components/C_26_6_2_2_24.txt) | 24 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 80,15,5,5, 84,15,5,5 |
@@ -239,7 +239,7 @@ Every covering used as a building block by a derived covering, where it comes fr
 | [C_26_14_4_4_28.txt](../derived/components/C_26_14_4_4_28.txt) | 28 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,18,5,5 |
 | [C_26_14_7_7_504.txt](../derived/components/C_26_14_7_7_504.txt) | 504 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 50,14,7,13 |
 | [C_26_15_5_5_52.txt](../derived/components/C_26_15_5_5_52.txt) | 52 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 80,15,5,5, 84,15,5,5 |
-| [C_26_16_7_7_166.txt](../derived/components/C_26_16_7_7_166.txt) | 166 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 26,10,10,19 |
+| [C_26_16_7_7_166.txt](../derived/components/C_26_16_7_7_166.txt) | 166 | own search covering (v1/v2) | equal | 1 | 26,10,10,19 |
 | [C_26_18_5_5_19.txt](../derived/components/C_26_18_5_5_19.txt) | 19 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,18,5,5 |
 | [C_27_4_2_2_61.txt](../derived/components/C_27_4_2_2_61.txt) | 61 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 74,15,6,6 |
 | [C_27_5_2_2_38.txt](../derived/components/C_27_5_2_2_38.txt) | 38 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 77,16,6,6 |
@@ -248,7 +248,7 @@ Every covering used as a building block by a derived covering, where it comes fr
 | [C_27_7_2_2_20.txt](../derived/components/C_27_7_2_2_20.txt) | 20 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 90,13,4,6, 89,16,5,5 |
 | [C_27_7_3_3_104.txt](../derived/components/C_27_7_3_3_104.txt) | 104 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 74,15,6,6 |
 | [C_27_8_3_3_69.txt](../derived/components/C_27_8_3_3_69.txt) | 69 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 77,16,6,6 |
-| [C_27_8_4_4_345.txt](../derived/components/C_27_8_4_4_345.txt) | 345 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 59,8,4,7 |
+| [C_27_8_4_4_345.txt](../derived/components/C_27_8_4_4_345.txt) | 345 | own search covering (v1/v2) | equal | 1 | 59,8,4,7 |
 | [C_27_8_5_5_1960.txt](../derived/components/C_27_8_5_5_1960.txt) | 1960 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 4 | 50,8,5,8, 53,8,5,8, 54,8,5,8, 85,8,5,12 |
 | [C_27_9_3_3_39.txt](../derived/components/C_27_9_3_3_39.txt) | 39 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 3 | 77,14,5,5, 81,15,5,5, 89,16,5,5 |
 | [C_27_9_5_5_957.txt](../derived/components/C_27_9_5_5_957.txt) | 957 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 3 | 55,9,5,9, 82,9,5,13, 83,9,5,13 |
@@ -266,8 +266,8 @@ Every covering used as a building block by a derived covering, where it comes fr
 | [C_28_6_3_3_185.txt](../derived/components/C_28_6_3_3_185.txt) | 185 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 3 | 60,13,6,6, 61,12,6,6, 50,14,7,7 |
 | [C_28_7_5_5_4680.txt](../derived/components/C_28_7_5_5_4680.txt) | 4680 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 48,7,5,8, 49,7,5,8 |
 | [C_28_8_3_3_73.txt](../derived/components/C_28_8_3_3_73.txt) | 73 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 75,16,6,6 |
-| [C_28_8_4_4_401.txt](../derived/components/C_28_8_4_4_401.txt) | 401 | own plain record (v1/v2 search, listed in search_plain.md) | site has 396 | 3 | 60,13,6,6, 61,12,6,6, 50,14,7,7 |
-| [C_28_9_5_5_1148.txt](../derived/components/C_28_9_5_5_1148.txt) | 1148 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 14 | 55,9,5,9, 56,9,5,9, 57,9,5,9, 82,9,5,13, 83,9,5,13, 84,9,5,13, 85,9,5,13, 86,9,5,13, 29,10,6,6, 57,10,6,11, 59,10,6,11, 85,10,6,16 ... |
+| [C_28_8_4_4_401.txt](../derived/components/C_28_8_4_4_401.txt) | 401 | own search covering (v1/v2) | site has 396 | 3 | 60,13,6,6, 61,12,6,6, 50,14,7,7 |
+| [C_28_9_5_5_1148.txt](../derived/components/C_28_9_5_5_1148.txt) | 1148 | own search covering (v1/v2) | equal | 14 | 55,9,5,9, 56,9,5,9, 57,9,5,9, 82,9,5,13, 83,9,5,13, 84,9,5,13, 85,9,5,13, 86,9,5,13, 29,10,6,6, 57,10,6,11, 59,10,6,11, 85,10,6,16 ... |
 | [C_28_10_4_4_154.txt](../derived/components/C_28_10_4_4_154.txt) | 154 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 57,10,4,6, 60,10,4,6 |
 | [C_28_10_5_5_738.txt](../derived/components/C_28_10_5_5_738.txt) | 738 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 61,12,6,6, 50,14,7,7 |
 | [C_28_10_6_6_2878.txt](../derived/components/C_28_10_6_6_2878.txt) | 2878 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 6 | 29,10,6,6, 57,10,6,11, 59,10,6,11, 85,10,6,16, 87,10,6,16, 89,10,6,16 |
@@ -281,23 +281,23 @@ Every covering used as a building block by a derived covering, where it comes fr
 | [C_28_14_7_7_929.txt](../derived/components/C_28_14_7_7_929.txt) | 929 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 50,14,7,7 |
 | [C_28_16_6_6_110.txt](../derived/components/C_28_16_6_6_110.txt) | 110 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 75,16,6,6 |
 | [C_29_8_5_5_3062.txt](../derived/components/C_29_8_5_5_3062.txt) | 3062 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 55,8,5,8 |
-| [C_29_9_5_5_1411.txt](../derived/components/C_29_9_5_5_1411.txt) | 1411 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 8 | 57,9,5,9, 58,9,5,9, 59,9,5,9, 85,9,5,13, 86,9,5,13, 87,9,5,13, 88,9,5,13, 89,9,5,13 |
-| [C_29_10_4_4_185.txt](../derived/components/C_29_10_4_4_185.txt) | 185 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 57,10,4,6 |
-| [C_29_13_5_5_204.txt](../derived/components/C_29_13_5_5_204.txt) | 204 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 11 | 56,13,5,9, 57,13,5,9, 58,13,5,9, 59,13,5,9, 60,13,5,9, 85,13,5,13, 86,13,5,13, 87,13,5,13, 88,13,5,13, 89,13,5,13, 90,13,5,13 |
+| [C_29_9_5_5_1411.txt](../derived/components/C_29_9_5_5_1411.txt) | 1411 | own search covering (v1/v2) | equal | 8 | 57,9,5,9, 58,9,5,9, 59,9,5,9, 85,9,5,13, 86,9,5,13, 87,9,5,13, 88,9,5,13, 89,9,5,13 |
+| [C_29_10_4_4_185.txt](../derived/components/C_29_10_4_4_185.txt) | 185 | own search covering (v1/v2) | equal | 1 | 57,10,4,6 |
+| [C_29_13_5_5_204.txt](../derived/components/C_29_13_5_5_204.txt) | 204 | own search covering (v1/v2) | equal | 11 | 56,13,5,9, 57,13,5,9, 58,13,5,9, 59,13,5,9, 60,13,5,9, 85,13,5,13, 86,13,5,13, 87,13,5,13, 88,13,5,13, 89,13,5,13, 90,13,5,13 |
 | [C_30_6_2_2_31.txt](../derived/components/C_30_6_2_2_31.txt) | 31 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 78,14,5,5 |
 | [C_30_8_3_3_93.txt](../derived/components/C_30_8_3_3_93.txt) | 93 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 78,14,5,5 |
 | [C_30_9_5_5_1744.txt](../derived/components/C_30_9_5_5_1744.txt) | 1744 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 3 | 59,9,5,9, 88,9,5,13, 89,9,5,13 |
 | [C_30_10_6_6_5125.txt](../derived/components/C_30_10_6_6_5125.txt) | 5125 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 3 | 59,10,6,11, 87,10,6,16, 89,10,6,16 |
 | [C_30_11_4_4_133.txt](../derived/components/C_30_11_4_4_133.txt) | 133 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 78,14,5,5 |
 | [C_30_13_5_5_250.txt](../derived/components/C_30_13_5_5_250.txt) | 250 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 3 | 59,13,5,9, 88,13,5,13, 90,13,5,13 |
-| [C_30_14_5_5_148.txt](../derived/components/C_30_14_5_5_148.txt) | 148 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 2 | 78,14,5,5, 62,14,5,9 |
+| [C_30_14_5_5_148.txt](../derived/components/C_30_14_5_5_148.txt) | 148 | own search covering (v1/v2) | equal | 2 | 78,14,5,5, 62,14,5,9 |
 | [C_31_5_2_2_50.txt](../derived/components/C_31_5_2_2_50.txt) | 50 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 53,17,7,7 |
 | [C_31_6_2_2_31.txt](../derived/components/C_31_6_2_2_31.txt) | 31 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 4 | 79,14,5,5, 85,15,5,5, 89,15,5,5, 67,15,6,6 |
 | [C_31_7_3_3_153.txt](../derived/components/C_31_7_3_3_153.txt) | 153 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 67,15,6,6, 53,17,7,7 |
 | [C_31_8_3_3_104.txt](../derived/components/C_31_8_3_3_104.txt) | 104 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 79,14,5,5 |
 | [C_31_9_3_3_73.txt](../derived/components/C_31_9_3_3_73.txt) | 73 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 85,15,5,5 |
 | [C_31_10_3_3_48.txt](../derived/components/C_31_10_3_3_48.txt) | 48 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,15,5,5 |
-| [C_31_11_4_4_152.txt](../derived/components/C_31_11_4_4_152.txt) | 152 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 4 | 59,11,4,6, 79,14,5,5, 67,15,6,6, 53,17,7,7 |
+| [C_31_11_4_4_152.txt](../derived/components/C_31_11_4_4_152.txt) | 152 | own search covering (v1/v2) | equal | 4 | 59,11,4,6, 79,14,5,5, 67,15,6,6, 53,17,7,7 |
 | [C_31_12_4_4_110.txt](../derived/components/C_31_12_4_4_110.txt) | 110 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 85,15,5,5, 89,15,5,5 |
 | [C_31_12_5_5_429.txt](../derived/components/C_31_12_5_5_429.txt) | 429 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 67,15,6,6 |
 | [C_31_13_5_5_287.txt](../derived/components/C_31_13_5_5_287.txt) | 287 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 5 | 60,13,5,9, 64,13,5,9, 89,13,5,13, 90,13,5,13, 53,17,7,7 |
@@ -318,7 +318,7 @@ Every covering used as a building block by a derived covering, where it comes fr
 | [C_32_12_6_6_1867.txt](../derived/components/C_32_12_6_6_1867.txt) | 1867 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 47,12,6,8 |
 | [C_32_13_5_5_341.txt](../derived/components/C_32_13_5_5_341.txt) | 341 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 84,13,5,5, 65,13,5,9 |
 | [C_32_13_6_6_1576.txt](../derived/components/C_32_13_6_6_1576.txt) | 1576 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 1514 | 1 | 60,13,6,6 |
-| [C_32_14_5_5_226.txt](../derived/components/C_32_14_5_5_226.txt) | 226 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 5 | 62,14,5,9, 63,14,5,9, 64,14,5,9, 65,14,5,9, 66,14,5,9 |
+| [C_32_14_5_5_226.txt](../derived/components/C_32_14_5_5_226.txt) | 226 | own search covering (v1/v2) | equal | 5 | 62,14,5,9, 63,14,5,9, 64,14,5,9, 65,14,5,9, 66,14,5,9 |
 | [C_33_4_2_2_91.txt](../derived/components/C_33_4_2_2_91.txt) | 91 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 61,12,6,6 |
 | [C_33_5_2_2_54.txt](../derived/components/C_33_5_2_2_54.txt) | 54 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 83,13,5,5, 89,14,5,5 |
 | [C_33_5_3_4_284.txt](../derived/components/C_33_5_3_4_284.txt) | 284 | Covering Repository (downloaded record) | equal | 9 | 44,8,5,6, 46,8,5,6, 46,9,5,6, 48,8,5,6, 49,9,5,6, 50,8,5,6, 80,8,5,10, 82,8,5,10, 84,8,5,10 |
@@ -329,10 +329,10 @@ Every covering used as a building block by a derived covering, where it comes fr
 | [C_33_9_3_3_80.txt](../derived/components/C_33_9_3_3_80.txt) | 80 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,14,5,5 |
 | [C_33_9_5_5_3163.txt](../derived/components/C_33_9_5_5_3163.txt) | 3163 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 46,9,5,6, 49,9,5,6 |
 | [C_33_10_5_5_1687.txt](../derived/components/C_33_10_5_5_1687.txt) | 1687 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 1686 | 1 | 61,12,6,6 |
-| [C_33_11_4_4_213.txt](../derived/components/C_33_11_4_4_213.txt) | 213 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 3 | 65,11,4,6, 65,11,4,7, 83,13,5,5 |
+| [C_33_11_4_4_213.txt](../derived/components/C_33_11_4_4_213.txt) | 213 | own search covering (v1/v2) | equal | 3 | 65,11,4,6, 65,11,4,7, 83,13,5,5 |
 | [C_33_12_4_4_134.txt](../derived/components/C_33_12_4_4_134.txt) | 134 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,14,5,5 |
 | [C_33_12_6_6_2740.txt](../derived/components/C_33_12_6_6_2740.txt) | 2740 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 2711 | 1 | 61,12,6,6 |
-| [C_33_13_5_5_393.txt](../derived/components/C_33_13_5_5_393.txt) | 393 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 5 | 83,13,5,5, 64,13,5,9, 65,13,5,9, 66,13,5,9, 67,13,5,9 |
+| [C_33_13_5_5_393.txt](../derived/components/C_33_13_5_5_393.txt) | 393 | own search covering (v1/v2) | equal | 5 | 83,13,5,5, 64,13,5,9, 65,13,5,9, 66,13,5,9, 67,13,5,9 |
 | [C_33_14_5_5_268.txt](../derived/components/C_33_14_5_5_268.txt) | 268 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 89,14,5,5, 65,14,5,9 |
 | [C_34_5_3_4_317.txt](../derived/components/C_34_5_3_4_317.txt) | 317 | Covering Repository (downloaded record) | equal | 6 | 47,8,5,6, 47,9,5,6, 50,9,5,6, 51,9,5,6, 85,8,5,10, 86,8,5,10 |
 | [C_34_6_2_2_40.txt](../derived/components/C_34_6_2_2_40.txt) | 40 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 84,14,5,5 |
@@ -342,13 +342,13 @@ Every covering used as a building block by a derived covering, where it comes fr
 | [C_34_9_5_5_3852.txt](../derived/components/C_34_9_5_5_3852.txt) | 3852 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 47,9,5,6, 50,9,5,6 |
 | [C_34_10_4_4_381.txt](../derived/components/C_34_10_4_4_381.txt) | 381 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 358 | 1 | 69,10,4,6 |
 | [C_34_11_4_4_249.txt](../derived/components/C_34_11_4_4_249.txt) | 249 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 66,11,4,6 |
-| [C_34_12_4_4_149.txt](../derived/components/C_34_12_4_4_149.txt) | 149 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 84,14,5,5 |
-| [C_34_13_5_5_468.txt](../derived/components/C_34_13_5_5_468.txt) | 468 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 3 | 67,13,5,9, 68,13,5,9, 69,13,5,9 |
+| [C_34_12_4_4_149.txt](../derived/components/C_34_12_4_4_149.txt) | 149 | own search covering (v1/v2) | equal | 1 | 84,14,5,5 |
+| [C_34_13_5_5_468.txt](../derived/components/C_34_13_5_5_468.txt) | 468 | own search covering (v1/v2) | equal | 3 | 67,13,5,9, 68,13,5,9, 69,13,5,9 |
 | [C_34_14_5_5_306.txt](../derived/components/C_34_14_5_5_306.txt) | 306 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 84,14,5,5, 66,14,5,9 |
 | [C_35_8_4_4_1112.txt](../derived/components/C_35_8_4_4_1112.txt) | 1112 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 67,8,4,6, 73,8,4,6 |
 | [C_35_8_5_5_9161.txt](../derived/components/C_35_8_5_5_9161.txt) | 9161 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 78,8,5,10 |
 | [C_35_9_5_5_4431.txt](../derived/components/C_35_9_5_5_4431.txt) | 4431 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 51,9,5,6 |
-| [C_35_10_4_4_415.txt](../derived/components/C_35_10_4_4_415.txt) | 415 | own plain record (v1/v2 search, listed in search_plain.md) | site has 410 | 1 | 69,10,4,6 |
+| [C_35_10_4_4_415.txt](../derived/components/C_35_10_4_4_415.txt) | 415 | own search covering (v1/v2) | site has 410 | 1 | 69,10,4,6 |
 | [C_35_13_5_5_602.txt](../derived/components/C_35_13_5_5_602.txt) | 602 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 69,13,5,9 |
 | [C_35_15_5_5_240.txt](../derived/components/C_35_15_5_5_240.txt) | 240 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 72,15,5,9 |
 | [C_36_4_2_2_108.txt](../derived/components/C_36_4_2_2_108.txt) | 108 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 67,15,6,6 |
@@ -362,7 +362,7 @@ Every covering used as a building block by a derived covering, where it comes fr
 | [C_36_9_4_4_672.txt](../derived/components/C_36_9_4_4_672.txt) | 672 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 67,15,6,6 |
 | [C_36_11_4_4_327.txt](../derived/components/C_36_11_4_4_327.txt) | 327 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 315 | 1 | 68,11,4,6 |
 | [C_36_12_3_3_40.txt](../derived/components/C_36_12_3_3_40.txt) | 40 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 90,25,6,6 |
-| [C_36_13_4_4_133.txt](../derived/components/C_36_13_4_4_133.txt) | 133 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 4 | 90,13,4,6, 72,13,4,7, 84,13,4,8, 86,13,4,8 |
+| [C_36_13_4_4_133.txt](../derived/components/C_36_13_4_4_133.txt) | 133 | own search covering (v1/v2) | equal | 4 | 90,13,4,6, 72,13,4,7, 84,13,4,8, 86,13,4,8 |
 | [C_36_13_5_5_729.txt](../derived/components/C_36_13_5_5_729.txt) | 729 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 712 | 1 | 67,15,6,6 |
 | [C_36_15_6_6_1286.txt](../derived/components/C_36_15_6_6_1286.txt) | 1286 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 1268 | 1 | 67,15,6,6 |
 | [C_36_18_4_4_33.txt](../derived/components/C_36_18_4_4_33.txt) | 33 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 90,25,6,6 |
@@ -371,7 +371,7 @@ Every covering used as a building block by a derived covering, where it comes fr
 | [C_37_6_5_5_74993.txt](../derived/components/C_37_6_5_5_74993.txt) | 74993 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 59,6,5,7 |
 | [C_37_7_2_2_35.txt](../derived/components/C_37_7_2_2_35.txt) | 35 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 88,9,3,4 |
 | [C_37_8_4_4_1448.txt](../derived/components/C_37_8_4_4_1448.txt) | 1448 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 1447 | 2 | 69,8,4,6, 75,8,4,6 |
-| [C_37_15_5_5_334.txt](../derived/components/C_37_15_5_5_334.txt) | 334 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 3 | 72,15,5,9, 74,15,5,9, 75,15,5,9 |
+| [C_37_15_5_5_334.txt](../derived/components/C_37_15_5_5_334.txt) | 334 | own search covering (v1/v2) | equal | 3 | 72,15,5,9, 74,15,5,9, 75,15,5,9 |
 | [C_38_4_3_4_953.txt](../derived/components/C_38_4_3_4_953.txt) | 953 | Covering Repository (downloaded record) | equal | 1 | 51,8,5,6 |
 | [C_38_6_4_4_6011.txt](../derived/components/C_38_6_4_4_6011.txt) | 6011 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 6006 | 2 | 74,6,4,6, 76,6,4,6 |
 | [C_38_6_5_5_87135.txt](../derived/components/C_38_6_5_5_87135.txt) | 87135 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 60,6,5,7 |
@@ -380,7 +380,7 @@ Every covering used as a building block by a derived covering, where it comes fr
 | [C_38_8_5_5_13569.txt](../derived/components/C_38_8_5_5_13569.txt) | 13569 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 6 | 51,8,5,6, 81,8,5,10, 82,8,5,10, 83,8,5,10, 84,8,5,10, 85,8,5,10 |
 | [C_38_9_4_4_856.txt](../derived/components/C_38_9_4_4_856.txt) | 856 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 78,9,4,6 |
 | [C_38_11_4_4_403.txt](../derived/components/C_38_11_4_4_403.txt) | 403 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 386 | 1 | 70,11,4,6 |
-| [C_38_13_4_4_173.txt](../derived/components/C_38_13_4_4_173.txt) | 173 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 88,13,4,8 |
+| [C_38_13_4_4_173.txt](../derived/components/C_38_13_4_4_173.txt) | 173 | own search covering (v1/v2) | equal | 1 | 88,13,4,8 |
 | [C_38_14_5_5_592.txt](../derived/components/C_38_14_5_5_592.txt) | 592 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 80,14,5,9 |
 | [C_38_15_5_5_383.txt](../derived/components/C_38_15_5_5_383.txt) | 383 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 75,15,5,9 |
 | [C_39_5_3_4_507.txt](../derived/components/C_39_5_3_4_507.txt) | 507 | Covering Repository (downloaded record) | equal | 1 | 52,9,5,6 |
@@ -400,10 +400,10 @@ Every covering used as a building block by a derived covering, where it comes fr
 | [C_40_7_5_5_41100.txt](../derived/components/C_40_7_5_5_41100.txt) | 41100 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 53,7,5,6 |
 | [C_40_8_3_3_231.txt](../derived/components/C_40_8_3_3_231.txt) | 231 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 90,13,5,5 |
 | [C_40_8_4_4_1949.txt](../derived/components/C_40_8_4_4_1949.txt) | 1949 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 3 | 78,8,4,6, 83,8,4,6, 84,8,4,6 |
-| [C_40_9_3_3_156.txt](../derived/components/C_40_9_3_3_156.txt) | 156 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 79,9,3,5 |
+| [C_40_9_3_3_156.txt](../derived/components/C_40_9_3_3_156.txt) | 156 | own search covering (v1/v2) | equal | 1 | 79,9,3,5 |
 | [C_40_9_4_4_1114.txt](../derived/components/C_40_9_4_4_1114.txt) | 1114 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 1110 | 3 | 78,9,4,6, 82,9,4,6, 81,11,5,5 |
 | [C_40_10_4_4_703.txt](../derived/components/C_40_10_4_4_703.txt) | 703 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 690 | 2 | 79,10,4,6, 90,13,5,5 |
-| [C_40_11_5_5_2821.txt](../derived/components/C_40_11_5_5_2821.txt) | 2821 | own plain record (v1/v2 search, listed in search_plain.md) | site has 2804 | 1 | 81,11,5,5 |
+| [C_40_11_5_5_2821.txt](../derived/components/C_40_11_5_5_2821.txt) | 2821 | own search covering (v1/v2) | site has 2804 | 1 | 81,11,5,5 |
 | [C_40_13_3_3_40.txt](../derived/components/C_40_13_3_3_40.txt) | 40 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 3 | 89,24,6,6, 90,23,6,6, 90,24,6,6 |
 | [C_40_13_5_5_1338.txt](../derived/components/C_40_13_5_5_1338.txt) | 1338 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 90,13,5,5 |
 | [C_40_14_4_4_150.txt](../derived/components/C_40_14_4_4_150.txt) | 150 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 90,24,6,6 |
@@ -430,24 +430,24 @@ Every covering used as a building block by a derived covering, where it comes fr
 | [C_42_7_5_5_52303.txt](../derived/components/C_42_7_5_5_52303.txt) | 52303 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 51870 | 1 | 55,7,5,6 |
 | [C_42_9_4_4_1453.txt](../derived/components/C_42_9_4_4_1453.txt) | 1453 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 82,9,4,6 |
 | [C_42_10_4_4_928.txt](../derived/components/C_42_10_4_4_928.txt) | 928 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 921 | 2 | 81,10,4,6, 88,10,4,6 |
-| [C_42_14_5_5_1038.txt](../derived/components/C_42_14_5_5_1038.txt) | 1038 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 4 | 80,14,5,9, 82,14,5,9, 84,14,5,9, 90,14,5,9 |
+| [C_42_14_5_5_1038.txt](../derived/components/C_42_14_5_5_1038.txt) | 1038 | own search covering (v1/v2) | equal | 4 | 80,14,5,9, 82,14,5,9, 84,14,5,9, 90,14,5,9 |
 | [C_43_4_3_4_1370.txt](../derived/components/C_43_4_3_4_1370.txt) | 1370 | Covering Repository (downloaded record) | equal | 2 | 56,7,5,6, 57,7,5,6 |
 | [C_43_7_5_5_58269.txt](../derived/components/C_43_7_5_5_58269.txt) | 58269 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 58250 | 2 | 56,7,5,6, 57,7,5,6 |
 | [C_43_8_4_4_2729.txt](../derived/components/C_43_8_4_4_2729.txt) | 2729 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 5 | 81,8,4,6, 83,8,4,6, 86,8,4,6, 87,8,4,6, 89,8,4,6 |
 | [C_44_6_2_2_67.txt](../derived/components/C_44_6_2_2_67.txt) | 67 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,24,7,7 |
 | [C_44_6_3_4_387.txt](../derived/components/C_44_6_3_4_387.txt) | 387 | Covering Repository (downloaded record) | equal | 1 | 60,12,6,7 |
 | [C_44_7_4_4_5385.txt](../derived/components/C_44_7_4_4_5385.txt) | 5385 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 80,7,4,6, 90,7,4,6 |
-| [C_44_8_4_4_3061.txt](../derived/components/C_44_8_4_4_3061.txt) | 3061 | own plain record (v1/v2 search, listed in search_plain.md) | site has 3058 | 5 | 82,8,4,6, 84,8,4,6, 87,8,4,6, 88,8,4,6, 90,8,4,6 |
+| [C_44_8_4_4_3061.txt](../derived/components/C_44_8_4_4_3061.txt) | 3061 | own search covering (v1/v2) | site has 3058 | 5 | 82,8,4,6, 84,8,4,6, 87,8,4,6, 88,8,4,6, 90,8,4,6 |
 | [C_44_9_3_3_210.txt](../derived/components/C_44_9_3_3_210.txt) | 210 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,24,7,7 |
 | [C_44_12_6_6_17505.txt](../derived/components/C_44_12_6_6_17505.txt) | 17505 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 60,12,6,7 |
 | [C_44_15_4_4_159.txt](../derived/components/C_44_15_4_4_159.txt) | 159 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,24,7,7 |
-| [C_44_18_5_5_307.txt](../derived/components/C_44_18_5_5_307.txt) | 307 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 89,24,7,7 |
+| [C_44_18_5_5_307.txt](../derived/components/C_44_18_5_5_307.txt) | 307 | own search covering (v1/v2) | equal | 1 | 89,24,7,7 |
 | [C_44_22_6_6_278.txt](../derived/components/C_44_22_6_6_278.txt) | 278 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 276 | 1 | 89,24,7,7 |
 | [C_44_24_7_7_414.txt](../derived/components/C_44_24_7_7_414.txt) | 414 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,24,7,7 |
 | [C_45_6_2_2_70.txt](../derived/components/C_45_6_2_2_70.txt) | 70 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,24,7,7 |
-| [C_45_9_3_3_224.txt](../derived/components/C_45_9_3_3_224.txt) | 224 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 89,24,7,7 |
+| [C_45_9_3_3_224.txt](../derived/components/C_45_9_3_3_224.txt) | 224 | own search covering (v1/v2) | equal | 1 | 89,24,7,7 |
 | [C_45_15_4_4_166.txt](../derived/components/C_45_15_4_4_166.txt) | 166 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,24,7,7 |
-| [C_45_18_5_5_338.txt](../derived/components/C_45_18_5_5_338.txt) | 338 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 89,24,7,7 |
+| [C_45_18_5_5_338.txt](../derived/components/C_45_18_5_5_338.txt) | 338 | own search covering (v1/v2) | equal | 1 | 89,24,7,7 |
 | [C_45_21_6_6_485.txt](../derived/components/C_45_21_6_6_485.txt) | 485 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 484 | 1 | 89,24,7,7 |
 | [C_45_24_7_7_517.txt](../derived/components/C_45_24_7_7_517.txt) | 517 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 514 | 1 | 89,24,7,7 |
 | [C_46_6_2_2_73.txt](../derived/components/C_46_6_2_2_73.txt) | 73 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 72 | 1 | 89,9,3,4 |
@@ -458,7 +458,7 @@ Every covering used as a building block by a derived covering, where it comes fr
 | [C_47_5_2_2_113.txt](../derived/components/C_47_5_2_2_113.txt) | 113 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 74,15,6,6, 75,16,6,6 |
 | [C_47_8_3_3_345.txt](../derived/components/C_47_8_3_3_345.txt) | 345 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 74,15,6,6, 75,16,6,6 |
 | [C_47_8_4_4_3986.txt](../derived/components/C_47_8_4_4_3986.txt) | 3986 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 85,8,4,6 |
-| [C_47_11_4_4_860.txt](../derived/components/C_47_11_4_4_860.txt) | 860 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 2 | 74,15,6,6, 75,16,6,6 |
+| [C_47_11_4_4_860.txt](../derived/components/C_47_11_4_4_860.txt) | 860 | own search covering (v1/v2) | equal | 2 | 74,15,6,6, 75,16,6,6 |
 | [C_47_12_5_5_3668.txt](../derived/components/C_47_12_5_5_3668.txt) | 3668 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 3667 | 2 | 74,15,6,6, 75,16,6,6 |
 | [C_47_15_6_6_8118.txt](../derived/components/C_47_15_6_6_8118.txt) | 8118 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 8115 | 1 | 74,15,6,6 |
 | [C_47_16_6_6_5327.txt](../derived/components/C_47_16_6_6_5327.txt) | 5327 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 75,16,6,6 |
@@ -467,19 +467,19 @@ Every covering used as a building block by a derived covering, where it comes fr
 | [C_48_7_2_2_56.txt](../derived/components/C_48_7_2_2_56.txt) | 56 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,22,6,6 |
 | [C_48_7_3_4_342.txt](../derived/components/C_48_7_3_4_342.txt) | 342 | Covering Repository (downloaded record) | equal | 1 | 59,12,5,6 |
 | [C_48_8_3_3_349.txt](../derived/components/C_48_8_3_3_349.txt) | 349 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 78,14,5,5, 79,14,5,5 |
-| [C_48_11_3_3_142.txt](../derived/components/C_48_11_3_3_142.txt) | 142 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 49,12,4,4 |
+| [C_48_11_3_3_142.txt](../derived/components/C_48_11_3_3_142.txt) | 142 | own search covering (v1/v2) | equal | 1 | 49,12,4,4 |
 | [C_48_12_3_3_92.txt](../derived/components/C_48_12_3_3_92.txt) | 92 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,22,6,6 |
 | [C_48_12_4_4_581.txt](../derived/components/C_48_12_4_4_581.txt) | 581 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 3 | 49,12,4,4, 78,14,5,5, 79,14,5,5 |
 | [C_48_12_5_5_3858.txt](../derived/components/C_48_12_5_5_3858.txt) | 3858 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 4 | 57,12,5,6, 58,12,5,6, 59,12,5,6, 60,12,5,6 |
-| [C_48_13_4_5_203.txt](../derived/components/C_48_13_4_5_203.txt) | 203 | own lottery record (wlsm2 search, listed in search_lottery.md) | equal | 2 | 47,13,4,5, 84,13,4,8 |
+| [C_48_13_4_5_203.txt](../derived/components/C_48_13_4_5_203.txt) | 203 | own search covering (wlsm2) | equal | 2 | 47,13,4,5, 84,13,4,8 |
 | [C_48_14_5_5_2156.txt](../derived/components/C_48_14_5_5_2156.txt) | 2156 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 3 | 78,14,5,5, 79,14,5,5, 90,14,5,9 |
 | [C_48_15_4_4_251.txt](../derived/components/C_48_15_4_4_251.txt) | 251 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,22,6,6 |
-| [C_48_19_5_5_338.txt](../derived/components/C_48_19_5_5_338.txt) | 338 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 89,22,6,6 |
+| [C_48_19_5_5_338.txt](../derived/components/C_48_19_5_5_338.txt) | 338 | own search covering (v1/v2) | equal | 1 | 89,22,6,6 |
 | [C_48_22_6_6_553.txt](../derived/components/C_48_22_6_6_553.txt) | 553 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,22,6,6 |
 | [C_49_7_2_2_56.txt](../derived/components/C_49_7_2_2_56.txt) | 56 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 88,9,3,4, 89,24,6,6 |
-| [C_49_11_3_3_151.txt](../derived/components/C_49_11_3_3_151.txt) | 151 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 89,24,6,6 |
+| [C_49_11_3_3_151.txt](../derived/components/C_49_11_3_3_151.txt) | 151 | own search covering (v1/v2) | equal | 1 | 89,24,6,6 |
 | [C_49_17_4_4_139.txt](../derived/components/C_49_17_4_4_139.txt) | 139 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,24,6,6 |
-| [C_49_20_5_5_307.txt](../derived/components/C_49_20_5_5_307.txt) | 307 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 89,24,6,6 |
+| [C_49_20_5_5_307.txt](../derived/components/C_49_20_5_5_307.txt) | 307 | own search covering (v1/v2) | equal | 1 | 89,24,6,6 |
 | [C_49_24_6_6_324.txt](../derived/components/C_49_24_6_6_324.txt) | 324 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,24,6,6 |
 | [C_50_4_2_2_213.txt](../derived/components/C_50_4_2_2_213.txt) | 213 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 74,16,6,6 |
 | [C_50_5_2_2_130.txt](../derived/components/C_50_5_2_2_130.txt) | 130 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 5 | 77,14,5,5, 83,13,5,5, 90,13,5,5, 71,16,6,6, 73,16,6,6 |
@@ -488,65 +488,65 @@ Every covering used as a building block by a derived covering, where it comes fr
 | [C_50_8_3_3_350.txt](../derived/components/C_50_8_3_3_350.txt) | 350 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 9 | 69,13,5,5, 77,14,5,5, 83,13,5,5, 84,14,5,5, 90,13,5,5, 71,16,6,6, 73,16,6,6, 74,16,6,6, 77,16,6,6 |
 | [C_50_8_3_4_237.txt](../derived/components/C_50_8_3_4_237.txt) | 237 | Covering Repository (downloaded record) | equal | 1 | 60,12,5,6 |
 | [C_50_10_2_2_30.txt](../derived/components/C_50_10_2_2_30.txt) | 30 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 90,24,6,6 |
-| [C_50_10_3_3_202.txt](../derived/components/C_50_10_3_3_202.txt) | 202 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 90,23,6,6 |
+| [C_50_10_3_3_202.txt](../derived/components/C_50_10_3_3_202.txt) | 202 | own search covering (v1/v2) | equal | 1 | 90,23,6,6 |
 | [C_50_11_3_3_163.txt](../derived/components/C_50_11_3_3_163.txt) | 163 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 90,24,6,6 |
-| [C_50_11_4_4_1201.txt](../derived/components/C_50_11_4_4_1201.txt) | 1201 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 8 | 69,13,5,5, 77,14,5,5, 83,13,5,5, 90,13,5,5, 71,16,6,6, 73,16,6,6, 74,16,6,6, 77,16,6,6 |
+| [C_50_11_4_4_1201.txt](../derived/components/C_50_11_4_4_1201.txt) | 1201 | own search covering (v1/v2) | equal | 8 | 69,13,5,5, 77,14,5,5, 83,13,5,5, 90,13,5,5, 71,16,6,6, 73,16,6,6, 74,16,6,6, 77,16,6,6 |
 | [C_50_12_4_4_773.txt](../derived/components/C_50_12_4_4_773.txt) | 773 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 84,14,5,5 |
-| [C_50_13_4_5_240.txt](../derived/components/C_50_13_4_5_240.txt) | 240 | own lottery record (wlsm2 search, listed in search_lottery.md) | equal | 3 | 49,13,4,5, 86,13,4,8, 88,13,4,8 |
-| [C_50_13_5_5_3480.txt](../derived/components/C_50_13_5_5_3480.txt) | 3480 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 7 | 69,13,5,5, 83,13,5,5, 90,13,5,5, 71,16,6,6, 73,16,6,6, 74,16,6,6, 77,16,6,6 |
+| [C_50_13_4_5_240.txt](../derived/components/C_50_13_4_5_240.txt) | 240 | own search covering (wlsm2) | equal | 3 | 49,13,4,5, 86,13,4,8, 88,13,4,8 |
+| [C_50_13_5_5_3480.txt](../derived/components/C_50_13_5_5_3480.txt) | 3480 | own search covering (v1/v2) | equal | 7 | 69,13,5,5, 83,13,5,5, 90,13,5,5, 71,16,6,6, 73,16,6,6, 74,16,6,6, 77,16,6,6 |
 | [C_50_14_5_5_2711.txt](../derived/components/C_50_14_5_5_2711.txt) | 2711 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 2708 | 2 | 77,14,5,5, 84,14,5,5 |
 | [C_50_16_6_6_7836.txt](../derived/components/C_50_16_6_6_7836.txt) | 7836 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 4 | 71,16,6,6, 73,16,6,6, 74,16,6,6, 77,16,6,6 |
 | [C_50_17_4_4_150.txt](../derived/components/C_50_17_4_4_150.txt) | 150 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 90,23,6,6, 90,24,6,6 |
-| [C_50_20_5_5_324.txt](../derived/components/C_50_20_5_5_324.txt) | 324 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 2 | 90,23,6,6, 90,24,6,6 |
+| [C_50_20_5_5_324.txt](../derived/components/C_50_20_5_5_324.txt) | 324 | own search covering (v1/v2) | equal | 2 | 90,23,6,6, 90,24,6,6 |
 | [C_50_23_6_6_521.txt](../derived/components/C_50_23_6_6_521.txt) | 521 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 90,23,6,6 |
 | [C_50_24_6_6_371.txt](../derived/components/C_50_24_6_6_371.txt) | 371 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 90,24,6,6 |
 | [C_52_5_2_2_136.txt](../derived/components/C_52_5_2_2_136.txt) | 136 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 84,13,5,5 |
 | [C_52_8_3_3_437.txt](../derived/components/C_52_8_3_3_437.txt) | 437 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 84,13,5,5 |
-| [C_52_11_4_4_1459.txt](../derived/components/C_52_11_4_4_1459.txt) | 1459 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 84,13,5,5 |
+| [C_52_11_4_4_1459.txt](../derived/components/C_52_11_4_4_1459.txt) | 1459 | own search covering (v1/v2) | equal | 1 | 84,13,5,5 |
 | [C_52_13_5_5_4242.txt](../derived/components/C_52_13_5_5_4242.txt) | 4242 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 84,13,5,5 |
 | [C_53_8_3_4_282.txt](../derived/components/C_53_8_3_4_282.txt) | 282 | Covering Repository (downloaded record) | equal | 1 | 72,14,5,6 |
-| [C_53_13_4_4_651.txt](../derived/components/C_53_13_4_4_651.txt) | 651 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 54,14,5,5 |
+| [C_53_13_4_4_651.txt](../derived/components/C_53_13_4_4_651.txt) | 651 | own search covering (v1/v2) | equal | 1 | 54,14,5,5 |
 | [C_53_14_5_5_3037.txt](../derived/components/C_53_14_5_5_3037.txt) | 3037 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 54,14,5,5, 72,14,5,6 |
 | [C_54_6_2_2_99.txt](../derived/components/C_54_6_2_2_99.txt) | 99 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 3 | 80,15,5,5, 81,15,5,5, 85,15,5,5 |
 | [C_54_7_2_2_73.txt](../derived/components/C_54_7_2_2_73.txt) | 73 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 90,25,6,6 |
-| [C_54_9_3_3_360.txt](../derived/components/C_54_9_3_3_360.txt) | 360 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 3 | 80,15,5,5, 81,15,5,5, 85,15,5,5 |
-| [C_54_13_3_3_121.txt](../derived/components/C_54_13_3_3_121.txt) | 121 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 90,25,6,6 |
-| [C_54_13_4_4_666.txt](../derived/components/C_54_13_4_4_666.txt) | 666 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 4 | 90,13,4,6, 80,15,5,5, 81,15,5,5, 85,15,5,5 |
+| [C_54_9_3_3_360.txt](../derived/components/C_54_9_3_3_360.txt) | 360 | own search covering (v1/v2) | equal | 3 | 80,15,5,5, 81,15,5,5, 85,15,5,5 |
+| [C_54_13_3_3_121.txt](../derived/components/C_54_13_3_3_121.txt) | 121 | own search covering (v1/v2) | equal | 1 | 90,25,6,6 |
+| [C_54_13_4_4_666.txt](../derived/components/C_54_13_4_4_666.txt) | 666 | own search covering (v1/v2) | equal | 4 | 90,13,4,6, 80,15,5,5, 81,15,5,5, 85,15,5,5 |
 | [C_54_15_5_5_2411.txt](../derived/components/C_54_15_5_5_2411.txt) | 2411 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 3 | 80,15,5,5, 81,15,5,5, 85,15,5,5 |
 | [C_54_18_4_4_141.txt](../derived/components/C_54_18_4_4_141.txt) | 141 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 90,25,6,6 |
 | [C_54_22_5_5_309.txt](../derived/components/C_54_22_5_5_309.txt) | 309 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 90,25,6,6 |
 | [C_54_25_6_6_511.txt](../derived/components/C_54_25_6_6_511.txt) | 511 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 507 | 1 | 90,25,6,6 |
-| [C_55_9_3_3_367.txt](../derived/components/C_55_9_3_3_367.txt) | 367 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 69,9,3,4 |
+| [C_55_9_3_3_367.txt](../derived/components/C_55_9_3_3_367.txt) | 367 | own search covering (v1/v2) | equal | 1 | 69,9,3,4 |
 | [C_56_5_2_2_157.txt](../derived/components/C_56_5_2_2_157.txt) | 157 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,14,5,5 |
-| [C_56_9_3_3_382.txt](../derived/components/C_56_9_3_3_382.txt) | 382 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 2 | 70,9,3,4, 89,14,5,5 |
-| [C_56_11_4_4_1901.txt](../derived/components/C_56_11_4_4_1901.txt) | 1901 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 89,14,5,5 |
+| [C_56_9_3_3_382.txt](../derived/components/C_56_9_3_3_382.txt) | 382 | own search covering (v1/v2) | equal | 2 | 70,9,3,4, 89,14,5,5 |
+| [C_56_11_4_4_1901.txt](../derived/components/C_56_11_4_4_1901.txt) | 1901 | own search covering (v1/v2) | equal | 1 | 89,14,5,5 |
 | [C_56_14_5_5_4579.txt](../derived/components/C_56_14_5_5_4579.txt) | 4579 | La Jolla Covering Repository archive (Zenodo 19735294) | site has 4569 | 1 | 89,14,5,5 |
-| [C_57_9_3_3_395.txt](../derived/components/C_57_9_3_3_395.txt) | 395 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 71,9,3,4 |
+| [C_57_9_3_3_395.txt](../derived/components/C_57_9_3_3_395.txt) | 395 | own search covering (v1/v2) | equal | 1 | 71,9,3,4 |
 | [C_58_5_2_2_174.txt](../derived/components/C_58_5_2_2_174.txt) | 174 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,15,5,5 |
 | [C_58_6_2_2_117.txt](../derived/components/C_58_6_2_2_117.txt) | 117 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 84,15,5,5 |
-| [C_58_9_3_3_406.txt](../derived/components/C_58_9_3_3_406.txt) | 406 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 5 | 67,9,3,4, 68,9,3,4, 72,9,3,4, 84,15,5,5, 89,15,5,5 |
-| [C_58_13_4_4_1024.txt](../derived/components/C_58_13_4_4_1024.txt) | 1024 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 2 | 84,15,5,5, 89,15,5,5 |
-| [C_58_15_4_4_576.txt](../derived/components/C_58_15_4_4_576.txt) | 576 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 57,15,4,4 |
+| [C_58_9_3_3_406.txt](../derived/components/C_58_9_3_3_406.txt) | 406 | own search covering (v1/v2) | equal | 5 | 67,9,3,4, 68,9,3,4, 72,9,3,4, 84,15,5,5, 89,15,5,5 |
+| [C_58_13_4_4_1024.txt](../derived/components/C_58_13_4_4_1024.txt) | 1024 | own search covering (v1/v2) | equal | 2 | 84,15,5,5, 89,15,5,5 |
+| [C_58_15_4_4_576.txt](../derived/components/C_58_15_4_4_576.txt) | 576 | own search covering (v1/v2) | equal | 1 | 57,15,4,4 |
 | [C_58_15_5_5_3077.txt](../derived/components/C_58_15_5_5_3077.txt) | 3077 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 84,15,5,5, 89,15,5,5 |
 | [C_62_7_2_2_98.txt](../derived/components/C_62_7_2_2_98.txt) | 98 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,16,5,5 |
 | [C_62_9_3_3_516.txt](../derived/components/C_62_9_3_3_516.txt) | 516 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,16,5,5 |
 | [C_62_13_3_3_173.txt](../derived/components/C_62_13_3_3_173.txt) | 173 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 83,13,3,4 |
-| [C_62_13_4_4_1444.txt](../derived/components/C_62_13_4_4_1444.txt) | 1444 | own plain record (v1/v2 search, listed in search_plain.md) | site has 1430 | 1 | 89,16,5,5 |
+| [C_62_13_4_4_1444.txt](../derived/components/C_62_13_4_4_1444.txt) | 1444 | own search covering (v1/v2) | site has 1430 | 1 | 89,16,5,5 |
 | [C_62_16_5_5_2594.txt](../derived/components/C_62_16_5_5_2594.txt) | 2594 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,16,5,5 |
 | [C_63_9_2_2_59.txt](../derived/components/C_63_9_2_2_59.txt) | 59 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,18,5,5 |
-| [C_63_10_3_3_399.txt](../derived/components/C_63_10_3_3_399.txt) | 399 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 89,18,5,5 |
-| [C_63_13_3_3_179.txt](../derived/components/C_63_13_3_3_179.txt) | 179 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 2 | 81,13,3,4, 84,13,3,4 |
+| [C_63_10_3_3_399.txt](../derived/components/C_63_10_3_3_399.txt) | 399 | own search covering (v1/v2) | equal | 1 | 89,18,5,5 |
+| [C_63_13_3_3_179.txt](../derived/components/C_63_13_3_3_179.txt) | 179 | own search covering (v1/v2) | equal | 2 | 81,13,3,4, 84,13,3,4 |
 | [C_63_15_4_4_651.txt](../derived/components/C_63_15_4_4_651.txt) | 651 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,18,5,5 |
 | [C_63_18_5_5_2283.txt](../derived/components/C_63_18_5_5_2283.txt) | 2283 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 89,18,5,5 |
 | [C_64_9_3_3_520.txt](../derived/components/C_64_9_3_3_520.txt) | 520 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 2 | 82,9,3,4, 85,9,3,4 |
 | [C_65_9_3_3_520.txt](../derived/components/C_65_9_3_3_520.txt) | 520 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 9 | 79,9,3,4, 81,9,3,4, 83,9,3,4, 84,9,3,4, 86,9,3,4, 87,9,3,4, 88,9,3,4, 89,9,3,4, 90,9,3,4 |
-| [C_66_11_3_3_355.txt](../derived/components/C_66_11_3_3_355.txt) | 355 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 2 | 84,11,3,4, 88,11,3,4 |
-| [C_67_11_3_3_362.txt](../derived/components/C_67_11_3_3_362.txt) | 362 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 3 | 83,11,3,4, 85,11,3,4, 89,11,3,4 |
-| [C_68_11_3_3_385.txt](../derived/components/C_68_11_3_3_385.txt) | 385 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 2 | 86,11,3,4, 90,11,3,4 |
-| [C_69_11_3_3_403.txt](../derived/components/C_69_11_3_3_403.txt) | 403 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 87,11,3,4 |
-| [C_70_20_4_4_356.txt](../derived/components/C_70_20_4_4_356.txt) | 356 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 69,20,4,4 |
-| [C_73_10_3_3_580.txt](../derived/components/C_73_10_3_3_580.txt) | 580 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 87,10,3,4 |
+| [C_66_11_3_3_355.txt](../derived/components/C_66_11_3_3_355.txt) | 355 | own search covering (v1/v2) | equal | 2 | 84,11,3,4, 88,11,3,4 |
+| [C_67_11_3_3_362.txt](../derived/components/C_67_11_3_3_362.txt) | 362 | own search covering (v1/v2) | equal | 3 | 83,11,3,4, 85,11,3,4, 89,11,3,4 |
+| [C_68_11_3_3_385.txt](../derived/components/C_68_11_3_3_385.txt) | 385 | own search covering (v1/v2) | equal | 2 | 86,11,3,4, 90,11,3,4 |
+| [C_69_11_3_3_403.txt](../derived/components/C_69_11_3_3_403.txt) | 403 | own search covering (v1/v2) | equal | 1 | 87,11,3,4 |
+| [C_70_20_4_4_356.txt](../derived/components/C_70_20_4_4_356.txt) | 356 | own search covering (v1/v2) | equal | 1 | 69,20,4,4 |
+| [C_73_10_3_3_580.txt](../derived/components/C_73_10_3_3_580.txt) | 580 | own search covering (v1/v2) | equal | 1 | 87,10,3,4 |
 | [C_74_10_3_3_591.txt](../derived/components/C_74_10_3_3_591.txt) | 591 | La Jolla Covering Repository archive (Zenodo 19735294) | equal | 1 | 88,10,3,4 |
-| [C_76_13_3_3_342.txt](../derived/components/C_76_13_3_3_342.txt) | 342 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 75,13,3,3 |
-| [C_78_13_3_3_353.txt](../derived/components/C_78_13_3_3_353.txt) | 353 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 77,13,3,3 |
-| [C_80_19_4_4_833.txt](../derived/components/C_80_19_4_4_833.txt) | 833 | own plain record (v1/v2 search, listed in search_plain.md) | equal | 1 | 79,19,4,4 |
+| [C_76_13_3_3_342.txt](../derived/components/C_76_13_3_3_342.txt) | 342 | own search covering (v1/v2) | equal | 1 | 75,13,3,3 |
+| [C_78_13_3_3_353.txt](../derived/components/C_78_13_3_3_353.txt) | 353 | own search covering (v1/v2) | equal | 1 | 77,13,3,3 |
+| [C_80_19_4_4_833.txt](../derived/components/C_80_19_4_4_833.txt) | 833 | own search covering (v1/v2) | equal | 1 | 79,19,4,4 |
