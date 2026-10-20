@@ -1,17 +1,20 @@
 # Covering design records by weighted local search
 
-This repository holds the code behind **491 current records** on the [Covering Repository](https://www.coveringrepository.com) (checked 2026-10-19): 416 for covering numbers C(v,k,t) (104 still from v1, 312 from v2) and 75 for lottery coverings C(v,k,t,m). [RECORDS.md](RECORDS.md) lists every entry, its previous value, and which solver found it.
+This repository holds the code behind our records on the [Covering Repository](https://www.coveringrepository.com): plain coverings C(v,k,t) and lottery coverings C(v,k,t,m) found by weighted local search, and derived coverings built from published coverings by explicit constructions. [RECORDS.md](RECORDS.md) has the current counts and links to every list; each entry shows its previous value, its method, and whether it is still the record.
 
 A (v,k,t) covering design is a set of k-element blocks drawn from v points such that every t-element subset of the points lies in at least one block. C(v,k,t) is the smallest number of blocks possible. For most parameters the exact value is unknown, so the public tables record the best covering anyone has found.
 
 ## Repository layout
 
-| Folder | What it is | Status |
-|---|---|---|
-| [`v1/`](v1/) | `wls128`: the first solver. | Kept unchanged so the published records can be reproduced. |
-| [`v2/`](v2/) | `wls2`: same search, 11–18× faster thanks to incremental move scores. | Current solver. |
-| [`vktm/`](vktm/) | `wlsm2` (and the first version `wlsm`): solver for lottery coverings C(v,k,t,m). | Finds records on a targeted subset of the lottery table (see below). |
-| [`scripts/`](scripts/) | `verify.py` (independent checker for (v,k,t)), `table.py` (reads the site's table archive). | |
+| Folder | What it is |
+|---|---|
+| [`v1/`](v1/) | `wls128`: the first solver, kept unchanged so its records can be reproduced. |
+| [`v2/`](v2/) | `wls2`: the same search, 11–18× faster thanks to incremental move scores. Current solver. |
+| [`vktm/`](vktm/) | `wlsm2` (and the first version `wlsm`): solver for lottery coverings C(v,k,t,m), and `mverify`. |
+| [`derived/`](derived/) | Derived coverings: construction recipes, their component coverings, and `build.py` to rebuild and check them. |
+| [`records/`](records/) | The record lists: search records (plain and lottery), derived coverings, and their components. |
+| [`data/`](data/) | The same lists as tab-separated files, the source the Markdown is generated from. |
+| [`scripts/`](scripts/) | `verify.py` (independent checker for (v,k,t)), `table.py` (reads the site's table archive), `update_records.py` (regenerates the lists against the live tables). |
 
 ## Method (v1)
 
@@ -80,9 +83,27 @@ What we measured while tuning it on record covers:
 | same, t = 3, m = 4, v ≥ 40 | 11% |
 | same, t = 3, m = 4, v < 40 | 1% |
 
-This produced 75 lottery records, all verified exactly and now live on the site (e.g. C(78,9,3,4) 672 → 647, C(74,8,3,4) 784 → 765).
+This produced 75 lottery records, all verified exactly (e.g. C(78,9,3,4) 672 → 647, C(74,8,3,4) 784 → 765); see [records/search_lottery.md](records/search_lottery.md).
 
 **Limits.** wlsm2 stores about 14 bytes per m-subset, so it needs C(v,m) up to roughly 10^9 at most on a 16 GB machine. Most lottery records have far larger m: the median entry held by the table's largest contributor is C(52,5,5,19), with 7.6 × 10^13 m-subsets. Those need a method that never enumerates m-subsets (for example lazy constraint generation with a fast exact checker), which we have not built.
+
+## Derived coverings
+
+Many more records come from combining published coverings: products over a split of the points, complement duality and
+one-point extensions ([derived/README.md](derived/README.md)). A scan of the whole table finds entries that some
+combination of smaller published coverings beats, and the covering is then built explicitly. For each one we publish the
+recipe and every component covering, so anyone can rebuild it with `python derived/build.py v,k,t,m` and trace each
+component back to the Covering Repository ([records/components.md](records/components.md)). They are
+listed separately from the search records because they come from known constructions, not from search.
+
+## Updating the lists
+
+```bash
+python scripts/update_records.py --work <working folder>
+```
+
+downloads the live tables, adds every newly uploaded derived covering (recipe and components) from the working folder,
+and regenerates RECORDS.md and records/. Search records stay listed after they are beaten, with the current value.
 
 ## Usage
 
