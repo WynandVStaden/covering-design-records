@@ -1,6 +1,6 @@
 # Plain coverings C(v,k,t) found by search
 
-Found by the weighted local search in [v1](../v1/) and [v2](../v2/), starting from the previous record covering. "Previous" is the table value before our upload. Where v2 improved a record that v1 had set, the v1 value is shown. Entries stay listed after someone else beats them; "status" shows the table on 2026-10-20.
+Found by the weighted local search in [v1](../v1/) and [v2](../v2/), starting from the previous record covering. "Previous" is the table value before our upload. Where v2 improved a record that v1 had set, the v1 value is shown. Entries stay listed after someone else beats them; "status" shows the table on 2026-10-21.
 
 | v | k | t | previous | ours | gain | method | v1 value | status |
 |---|---|---|---|---|---|---|---|---|
@@ -146,7 +146,7 @@ Found by the weighted local search in [v1](../v1/) and [v2](../v2/), starting fr
 | 76 | 20 | 3 | 84 | 83 | 1 | v1 |  | current record |
 | 77 | 11 | 3 | 558 | 555 | 3 | v2 |  | current record |
 | 77 | 12 | 3 | 454 | 447 | 7 | v2 | 453 | current record |
-| 77 | 13 | 3 | 362 | 354 | 8 | v2 | 360 | improved by our derived covering (now 353) |
+| 77 | 13 | 3 | 362 | 354 | 8 | v2 | 360 | improved by our derived covering (now 351) |
 | 77 | 14 | 3 | 297 | 292 | 5 | v2 | 295 | current record |
 | 77 | 15 | 3 | 220 | 217 | 3 | v2 |  | current record |
 | 77 | 17 | 3 | 152 | 147 | 5 | v2 | 151 | current record |
@@ -295,7 +295,7 @@ Found by the weighted local search in [v1](../v1/) and [v2](../v2/), starting fr
 | 48 | 20 | 4 | 86 | 83 | 3 | v2 |  | current record |
 | 50 | 11 | 4 | 1208 | 1201 | 7 | v2 | 1207 | current record |
 | 50 | 16 | 4 | 236 | 231 | 5 | v2 |  | beaten (now 228) |
-| 51 | 13 | 4 | 592 | 586 | 6 | v2 |  | current record |
+| 51 | 13 | 4 | 592 | 585 | 7 | v2+wlsm2big |  | current record |
 | 52 | 10 | 4 | 2302 | 2301 | 1 | v1 |  | beaten (now 2298) |
 | 52 | 11 | 4 | 1463 | 1459 | 4 | v2 |  | current record |
 | 52 | 13 | 4 | 638 | 631 | 7 | v2 |  | beaten (now 629) |
@@ -314,7 +314,7 @@ Found by the weighted local search in [v1](../v1/) and [v2](../v2/), starting fr
 | 57 | 14 | 4 | 672 | 654 | 18 | v2 |  | current record |
 | 57 | 19 | 4 | 166 | 164 | 2 | v2 |  | current record |
 | 58 | 11 | 4 | 2305 | 2301 | 4 | v2 |  | beaten (now 2283) |
-| 58 | 13 | 4 | 1105 | 1024 | 81 | v2 |  | current record |
+| 58 | 13 | 4 | 1105 | 1023 | 82 | v2+wlsm2big |  | current record |
 | 58 | 14 | 4 | 786 | 732 | 54 | v2 |  | beaten (now 731) |
 | 58 | 15 | 4 | 602 | 576 | 26 | v2 |  | current record |
 | 58 | 19 | 4 | 178 | 177 | 1 | v1 |  | beaten (now 175) |
@@ -350,8 +350,8 @@ Found by the weighted local search in [v1](../v1/) and [v2](../v2/), starting fr
 | 73 | 18 | 4 | 741 | 699 | 42 | v2 |  | current record |
 | 73 | 19 | 4 | 589 | 579 | 10 | v2 | 585 | current record |
 | 74 | 15 | 4 | 1608 | 1589 | 19 | v2 |  | current record |
-| 75 | 13 | 4 | 3383 | 3382 | 1 | v1 |  | current record |
-| 75 | 14 | 4 | 2549 | 2538 | 11 | v2 |  | current record |
+| 75 | 13 | 4 | 3383 | 3366 | 17 | v1+wlsm2big |  | current record |
+| 75 | 14 | 4 | 2549 | 2530 | 19 | v2+wlsm2big |  | current record |
 | 75 | 15 | 4 | 1675 | 1657 | 18 | v2 | 1666 | current record |
 | 75 | 16 | 4 | 1389 | 1373 | 16 | v2 |  | beaten (now 1363) |
 | 75 | 20 | 4 | 542 | 532 | 10 | v2 |  | beaten (now 522) |
@@ -360,12 +360,12 @@ Found by the weighted local search in [v1](../v1/) and [v2](../v2/), starting fr
 | 76 | 18 | 4 | 846 | 835 | 11 | v2 |  | current record |
 | 77 | 16 | 4 | 1540 | 1505 | 35 | v2 | 1535 | current record |
 | 77 | 19 | 4 | 761 | 752 | 9 | v2 |  | current record |
-| 78 | 13 | 4 | 3957 | 3954 | 3 | v2 | 3956 | current record |
+| 78 | 13 | 4 | 3957 | 3944 | 13 | v2+wlsm2big | 3956 | current record |
 | 78 | 14 | 4 | 2889 | 2865 | 24 | v2 |  | current record |
 | 78 | 20 | 4 | 591 | 589 | 2 | v2 |  | current record |
 | 79 | 14 | 4 | 3111 | 3105 | 6 | v2 |  | current record |
 | 79 | 18 | 4 | 985 | 984 | 1 | v1 |  | current record |
-| 80 | 14 | 4 | 3310 | 3308 | 2 | v1 |  | current record |
+| 80 | 14 | 4 | 3310 | 3305 | 5 | v1+wlsm2big |  | current record |
 | 80 | 16 | 4 | 1844 | 1818 | 26 | v2 |  | current record |
 | 80 | 19 | 4 | 847 | 833 | 14 | v2 |  | current record |
 | 81 | 16 | 4 | 1944 | 1922 | 22 | v2 |  | current record |
@@ -378,12 +378,12 @@ Found by the weighted local search in [v1](../v1/) and [v2](../v2/), starting fr
 | 88 | 19 | 4 | 1321 | 1310 | 11 | v2 |  | current record |
 | 91 | 19 | 4 | 1596 | 1583 | 13 | v2 |  | current record |
 | 92 | 17 | 4 | 2723 | 2722 | 1 | v1 |  | beaten (now 2713) |
-| 95 | 16 | 4 | 3773 | 3772 | 1 | v1 |  | current record |
+| 95 | 16 | 4 | 3773 | 3763 | 10 | v1+wlsm2big |  | current record |
 | 97 | 19 | 4 | 2105 | 2075 | 30 | v2 |  | current record |
 | 98 | 20 | 4 | 1741 | 1700 | 41 | v2 |  | current record |
 | 18 | 8 | 5 | 233 | 229 | 4 | v1 |  | current record |
 | 25 | 11 | 5 | 226 | 223 | 3 | v1 |  | current record |
-| 26 | 11 | 5 | 268 | 267 | 1 | v2 |  | current record |
+| 26 | 11 | 5 | 268 | 266 | 2 | v2+wlsm2big |  | current record |
 | 28 | 9 | 5 | 1171 | 1148 | 23 | v2 |  | current record |
 | 29 | 9 | 5 | 1421 | 1411 | 10 | v2 |  | current record |
 | 29 | 13 | 5 | 215 | 204 | 11 | v2 |  | current record |
@@ -424,7 +424,7 @@ Found by the weighted local search in [v1](../v1/) and [v2](../v2/), starting fr
 | 25 | 9 | 6 | 3019 | 3017 | 2 | v2 |  | beaten (now 2988) |
 | 26 | 9 | 6 | 3924 | 3914 | 10 | v2 |  | beaten (now 3903) |
 | 30 | 16 | 6 | 175 | 168 | 7 | v2 | 174 | current record |
-| 31 | 11 | 6 | 3526 | 3525 | 1 | v1 |  | current record |
+| 31 | 11 | 6 | 3526 | 3468 | 58 | v1+wlsm2big |  | current record |
 | 32 | 17 | 6 | 187 | 185 | 2 | v2 |  | current record |
 | 33 | 18 | 6 | 146 | 145 | 1 | v2 |  | current record |
 | 35 | 18 | 6 | 223 | 207 | 16 | v2 | 211 | current record |
