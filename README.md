@@ -10,11 +10,11 @@ A (v,k,t) covering design is a set of k-element blocks drawn from v points such 
 |---|---|
 | [`v1/`](v1/) | `wls128`: the first solver, kept unchanged so its records can be reproduced. |
 | [`v2/`](v2/) | `wls2`: the same search, 11–18× faster thanks to incremental move scores. Current solver. |
-| [`vktm/`](vktm/) | `wlsm2` (and the first version `wlsm`): solver for lottery coverings C(v,k,t,m), and `mverify`. |
+| [`vktm/`](vktm/) | `wlsm2big` (current lottery solver, for large covers), `wlsm2` and the first version `wlsm`, and `mverify`. |
 | [`derived/`](derived/) | Derived coverings: construction recipes, their component coverings, and `build.py` to rebuild and check them. |
 | [`records/`](records/) | The record lists: search records (plain and lottery), derived coverings, and their components. |
 | [`data/`](data/) | The same lists as tab-separated files, the source the Markdown is generated from. |
-| [`scripts/`](scripts/) | `verify.py` (independent checker for (v,k,t)), `table.py` (reads the site's table archive), `update_records.py` (regenerates the lists against the live tables). |
+| [`scripts/`](scripts/) | `verify.py` (independent checker for (v,k,t)), `table.py` (reads the site's table archive), `update_records.py` (regenerates the lists against the live tables), `zerocov.cpp` (exhaustive check and zero-coverage cleanup), `reshrink_batch.py` (batch shrinking). |
 
 ## Method (v1)
 
@@ -86,6 +86,39 @@ What we measured while tuning it on record covers:
 This produced 75 lottery records, all verified exactly (e.g. C(78,9,3,4) 672 → 647, C(74,8,3,4) 784 → 765); see [records/search_lottery.md](records/search_lottery.md).
 
 **Limits.** wlsm2 stores about 14 bytes per m-subset, so it needs C(v,m) up to roughly 10^9 at most on a 16 GB machine. Most lottery records have far larger m: the median entry held by the table's largest contributor is C(52,5,5,19), with 7.6 × 10^13 m-subsets. Those need a method that never enumerates m-subsets (for example lazy constraint generation with a fast exact checker), which we have not built.
+
+## wlsm2big: the lottery solver for large covers
+
+`vktm/wlsm2big.cpp` is wlsm2 with the same search and the same shrink mode (start from a full cover, delete the block
+whose removal costs least, repair with point swaps, repeat), engineered for covers with up to about 1.6·10^9 m-subsets
+and hundreds of thousands of blocks. It also runs plain coverings (m = t), though v2 is leaner for small plain covers.
+
+| Change | Why |
+|---|---|
+| witness byte per m-subset (sum of local indices of its covered t-subsets) | when an m-subset is covered once, the byte names the covering t-subset, so a 1↔2 change updates one score instead of C(m,t) |
+| O(m−t) colex ranking of t-subsets | cheaper bookkeeping on every coverage change |
+| OpenMP for setup, score rebuilds, each flip's superset enumeration, the candidate scan and candidate scoring | per-m-subset state is touched once per flip, so only shared t-set scores need atomics |
+| deletion pool with early exit | re-score ~2,000 cheapest blocks instead of all of them; stop at score 0 |
+| geometric weight bump between levels (`BUMP_GROWTH`) | the same as decaying old breakout weights; without it long runs drift |
+| revert by undo log (`LEVEL_BUDGET`, `GROWTH`, `REVERT_SECS`) | when a deletion cannot be repaired, return to the last full cover and delete another block |
+| cost guard, exit-save on SIGTERM, `STALL` on real progress | refuses covers where one flip costs > 10^8 updates; never loses the best cover |
+
+A `-DCHECK` build recounts all bookkeeping by brute force every 2,000 steps; every change above was run through it.
+
+Measured on C(35,10,9,12) (834,451,800 m-subsets), starting from a 404,385-block constructed cover:
+
+| Version | Steps per second | Result |
+|---|---|---|
+| wlsm2 | — | out of memory |
+| wlsm2big, parallel setup and pool | ~33 | stalled near 366,000 |
+| + witness byte, reverts, geometric bump | ~120 | |
+| + parallel flips, scoring and scan, pool early exit | ~270–350 | **~363,000 after 10 minutes** |
+
+`scripts/reshrink_batch.py` runs wlsm2big over a list of covers with a time limit (60 s without progress, 10 minutes
+at most) and verifies every improvement with `scripts/zerocov.cpp`, an independent exhaustive checker that also removes
+blocks with zero exclusive coverage. Re-shrinking our own published covers this way improved 137 of them (marked
+`+wlsm2big` in the record lists), e.g. C(60,6,5,7) 223,464 → 201,801 and C(59,6,5,7) 204,392 → 183,232. Constructed
+covers gain most: the product construction covers many m-subsets several times. Search records were already tight.
 
 ## Derived coverings
 
