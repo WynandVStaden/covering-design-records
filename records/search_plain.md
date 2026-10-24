@@ -1,6 +1,6 @@
 # Plain coverings C(v,k,t) found by search
 
-Found by the weighted local search in [v1](../v1/) and [v2](../v2/), starting from the previous record covering. "Previous" is the table value before our upload. Where v2 improved a record that v1 had set, the v1 value is shown. Entries stay listed after someone else beats them; "status" shows the table on 2026-10-21.
+Found by the weighted local search in [v1](../v1/) and [v2](../v2/), starting from the previous record covering. "Previous" is the table value before our upload. Where v2 improved a record that v1 had set, the v1 value is shown. Entries stay listed after someone else beats them; "status" shows the table on 2026-10-24.
 
 | v | k | t | previous | ours | gain | method | v1 value | status |
 |---|---|---|---|---|---|---|---|---|
@@ -240,7 +240,7 @@ Found by the weighted local search in [v1](../v1/) and [v2](../v2/), starting fr
 | 94 | 10 | 3 | 1411 | 1405 | 6 | v2 | 1407 | current record |
 | 94 | 12 | 3 | 776 | 756 | 20 | v2 | 769 | current record |
 | 94 | 15 | 3 | 413 | 408 | 5 | v2 | 412 | current record |
-| 95 | 8 | 3 | 2994 | 2991 | 3 | v1 |  | current record |
+| 95 | 8 | 3 | 2994 | 2991 | 3 | v1 |  | beaten (now 2990) |
 | 95 | 12 | 3 | 786 | 780 | 6 | v2 | 784 | current record |
 | 95 | 13 | 3 | 695 | 693 | 2 | v1 |  | current record |
 | 95 | 14 | 3 | 517 | 514 | 3 | v2 | 516 | current record |
@@ -317,13 +317,13 @@ Found by the weighted local search in [v1](../v1/) and [v2](../v2/), starting fr
 | 58 | 13 | 4 | 1105 | 1023 | 82 | v2+wlsm2big |  | current record |
 | 58 | 14 | 4 | 786 | 732 | 54 | v2 |  | beaten (now 731) |
 | 58 | 15 | 4 | 602 | 576 | 26 | v2 |  | current record |
-| 58 | 19 | 4 | 178 | 177 | 1 | v1 |  | beaten (now 175) |
+| 58 | 19 | 4 | 178 | 177 | 1 | v1 |  | beaten (now 174) |
 | 59 | 12 | 4 | 1664 | 1660 | 4 | v2 |  | beaten (now 1659) |
 | 60 | 15 | 4 | 626 | 622 | 4 | v2 |  | beaten (now 620) |
 | 61 | 15 | 4 | 640 | 635 | 5 | v2 |  | current record |
 | 61 | 19 | 4 | 242 | 239 | 3 | v2 |  | current record |
 | 61 | 20 | 4 | 182 | 180 | 2 | v2 |  | current record |
-| 62 | 13 | 4 | 1513 | 1474 | 39 | v1 |  | beaten (now 1430) |
+| 62 | 13 | 4 | 1513 | 1474 | 39 | v1 |  | beaten (now 1429) |
 | 62 | 14 | 4 | 1070 | 1065 | 5 | v2 |  | beaten (now 1049) |
 | 62 | 16 | 4 | 585 | 581 | 4 | v2 | 584 | current record |
 | 63 | 16 | 4 | 591 | 589 | 2 | v1 |  | beaten (now 588) |
@@ -385,7 +385,7 @@ Found by the weighted local search in [v1](../v1/) and [v2](../v2/), starting fr
 | 25 | 11 | 5 | 226 | 223 | 3 | v1 |  | current record |
 | 26 | 11 | 5 | 268 | 266 | 2 | v2+wlsm2big |  | current record |
 | 28 | 9 | 5 | 1171 | 1148 | 23 | v2 |  | current record |
-| 29 | 9 | 5 | 1421 | 1411 | 10 | v2 |  | current record |
+| 29 | 9 | 5 | 1421 | 1411 | 10 | v2 |  | beaten (now 1367) |
 | 29 | 13 | 5 | 215 | 204 | 11 | v2 |  | current record |
 | 29 | 14 | 5 | 122 | 121 | 1 | v2 |  | current record |
 | 30 | 14 | 5 | 152 | 148 | 4 | v2 | 150 | current record |

@@ -1,6 +1,6 @@
 # Lottery coverings C(v,k,t,m) found by search
 
-Found by [wlsm2](../vktm/) starting from the previous record covering, and verified exactly (CP-SAT infeasibility proof or exhaustive `mverify`). "Status" shows the table on 2026-10-21.
+Found by [wlsm2](../vktm/) starting from the previous record covering, and verified exactly (CP-SAT infeasibility proof or exhaustive `mverify`). "Status" shows the table on 2026-10-24.
 
 | v | k | t | m | previous | ours | gain | method | status |
 |---|---|---|---|---|---|---|---|---|
@@ -50,7 +50,7 @@ Found by [wlsm2](../vktm/) starting from the previous record covering, and verif
 | 49 | 14 | 4 | 5 | 160 | 156 | 4 | wlsm2 | current record |
 | 50 | 11 | 4 | 5 | 541 | 539 | 2 | wlsm2+wlsm2big | current record |
 | 50 | 13 | 4 | 5 | 262 | 239 | 23 | wlsm2+wlsm2big | current record |
-| 51 | 13 | 4 | 5 | 299 | 294 | 5 | wlsm2+wlsm2big | current record |
+| 51 | 13 | 4 | 5 | 299 | 294 | 5 | wlsm2+wlsm2big | improved by our derived covering (now 257) |
 | 51 | 14 | 4 | 5 | 201 | 198 | 3 | wlsm2+wlsm2big | current record |
 | 52 | 13 | 4 | 5 | 334 | 276 | 58 | wlsm2+wlsm2big | current record |
 | 52 | 15 | 4 | 5 | 164 | 153 | 11 | wlsm2 | current record |
