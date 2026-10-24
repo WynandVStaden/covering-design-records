@@ -31,11 +31,11 @@ Found by [wlsm2](../vktm/) starting from the previous record covering, and verif
 | 79 | 9 | 3 | 4 | 705 | 703 | 2 | wlsm2 | beaten (now 668) |
 | 79 | 12 | 3 | 4 | 286 | 285 | 1 | wlsm2 | current record |
 | 79 | 15 | 3 | 4 | 147 | 143 | 4 | wlsm2+wlsm2big | current record |
-| 81 | 8 | 3 | 4 | 1073 | 1068 | 5 | wlsm2+wlsm2big | current record |
+| 81 | 8 | 3 | 4 | 1073 | 1068 | 5 | wlsm2+wlsm2big | beaten (now 1065) |
 | 82 | 9 | 3 | 4 | 803 | 800 | 3 | wlsm2 | beaten (now 772) |
 | 83 | 9 | 3 | 4 | 835 | 834 | 1 | wlsm2 | beaten (now 776) |
 | 83 | 12 | 3 | 4 | 330 | 327 | 3 | wlsm2+wlsm2big | current record |
-| 84 | 8 | 3 | 4 | 1237 | 1230 | 7 | wlsm2+wlsm2big | current record |
+| 84 | 8 | 3 | 4 | 1237 | 1230 | 7 | wlsm2+wlsm2big | beaten (now 1229) |
 | 85 | 9 | 3 | 4 | 920 | 919 | 1 | wlsm2 | beaten (now 846) |
 | 86 | 13 | 3 | 4 | 315 | 309 | 6 | wlsm2+wlsm2big | current record |
 | 87 | 12 | 3 | 4 | 385 | 383 | 2 | wlsm2+wlsm2big | current record |
