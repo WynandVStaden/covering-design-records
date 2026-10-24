@@ -24,6 +24,12 @@ ORIGINS = [  # prefix of the source path in the working folder -> where the comp
     ('lotto4/leaves/', 'La Jolla Covering Repository archive (Zenodo 19735294)'),
     ('data/mrec/', 'Covering Repository (downloaded record)'),
     ('data/rec/', 'Covering Repository (downloaded record)'),
+    ('data/rec2/', 'Covering Repository (downloaded record)'),
+    ('data/mrec2/', 'Covering Repository (downloaded record)'),
+    ('reshrink/out/', 'own covering (re-shrunk with wlsm2big)'),
+    ('lotto_new/', 'own derived covering'),
+    ('lotto4/built', 'own derived covering'),
+    ('construct', 'own derived covering (shrunk)'),
 ]
 
 
@@ -78,25 +84,75 @@ def add_uploaded(work, live):
         if (str(v), str(k), str(t), str(m)) in have or live.get((v, k, t, m)) != ours: continue
         name = '%d,%d,%d,%d' % (v, k, t, m)
         tree = json.load(open(os.path.join(work, 'lotto_new', 'recipes', name + '.json')))
-        for leaf in leaves(tree, []):
-            src = leaf['src'].replace('\\', '/'); data = open(os.path.join(work, src), 'rb').read()
-            h = hashlib.sha1(data).hexdigest()
-            if h not in by_hash:
-                nb = sum(1 for x in data.splitlines() if x.strip())
-                base = 'C_%d_%d_%d_%d_%d' % (leaf['v'], leaf['k'], leaf['t'], leaf['m'], nb); fn = base + '.txt'; i = 2
-                while fn in comps: fn = '%s_%d.txt' % (base, i); i += 1
-                open(os.path.join(DER, 'components', fn), 'wb').write(data)
-                origin = next((o for p, o in ORIGINS if src.startswith(p)), 'unknown')
-                comps[fn] = dict(file=fn, v=leaf['v'], k=leaf['k'], t=leaf['t'], m=leaf['m'], blocks=nb, origin=origin, sha1=h)
-                by_hash[h] = fn
-            leaf['src'] = 'components/' + by_hash[h]
-        json.dump(tree, open(os.path.join(DER, 'recipes', name + '.json'), 'w'), separators=(',', ':'))
+        store_recipe(work, name, tree, comps, by_hash)
         rows.append(dict(kind=r[0], v=v, k=k, t=t, m=m, previous=prev, ours=ours, construction=r[10], uploaded=today))
         added += 1
+    save_lists(rows, comps)
+    return added
+
+
+def store_recipe(work, name, tree, comps, by_hash):
+    """Copy every leaf cover of a recipe into derived/components (deduplicated by hash) and save the recipe."""
+    for leaf in leaves(tree, []):
+        src = leaf['src'].replace('\\', '/'); data = open(os.path.join(work, src), 'rb').read()
+        h = hashlib.sha1(data).hexdigest()
+        if h not in by_hash:
+            nb = sum(1 for x in data.splitlines() if x.strip())
+            base = 'C_%d_%d_%d_%d_%d' % (leaf['v'], leaf['k'], leaf['t'], leaf['m'], nb); fn = base + '.txt'; i = 2
+            while fn in comps: fn = '%s_%d.txt' % (base, i); i += 1
+            open(os.path.join(DER, 'components', fn), 'wb').write(data)
+            origin = next((o for p, o in ORIGINS if src.startswith(p)), 'unknown')
+            comps[fn] = dict(file=fn, v=leaf['v'], k=leaf['k'], t=leaf['t'], m=leaf['m'], blocks=nb, origin=origin, sha1=h)
+            by_hash[h] = fn
+        leaf['src'] = 'components/' + by_hash[h]
+    json.dump(tree, open(os.path.join(DER, 'recipes', name + '.json'), 'w'), separators=(',', ':'))
+
+
+def save_lists(rows, comps):
     key = lambda r: (int(r['t']), int(r['m']), int(r['v']), int(r['k']))
     write_tsv('derived.tsv', ['kind', 'v', 'k', 't', 'm', 'previous', 'ours', 'construction', 'uploaded'], sorted(rows, key=key))
     write_tsv('components.tsv', ['file', 'v', 'k', 't', 'm', 'blocks', 'origin', 'sha1'], sorted(comps.values(), key=key))
-    return added
+
+
+def describe(n):
+    if n['op'] == 'product':
+        v1 = n['v1']; v2 = n['v'] - v1
+        return 'prod[%d|%d]: ' % (v1, v2) + ' + '.join('C(%d,%d,%d,%d)xC(%d,%d,%d,%d)' % (v1, a, b, c, v2, d, e, f) for a, b, c, d, e, f, _, _ in n['terms'])
+    if 'child' in n:
+        ch = n['child']; return '%s of C(%d,%d,%d,%d)' % (n['op'], ch['v'], ch['k'], ch['t'], ch['m'])
+    return n['op']
+
+
+def add_built(work, live, spec):
+    """spec = builddir:targets[:shrunkdir], relative to work. A build dir holds v,k,t,m.txt + .json recipe per cover,
+    targets lists 'v k t m live_before ...'. Every cover whose built or shrunk size is now the live value is added
+    (or updated when the live value is smaller than what is listed)."""
+    parts = spec.split(':'); bdir, tfile = parts[0], parts[1]; sdir = parts[2] if len(parts) > 2 else None
+    rows = read_tsv('derived.tsv'); idx = {(r['v'], r['k'], r['t'], r['m']): r for r in rows}
+    comps = {r['file']: r for r in read_tsv('components.tsv')}; by_hash = {r['sha1']: r['file'] for r in comps.values()}
+    os.makedirs(os.path.join(DER, 'recipes'), exist_ok=True); os.makedirs(os.path.join(DER, 'components'), exist_ok=True)
+    nb = lambda p: sum(1 for x in open(p, 'rb') if x.strip())
+    today = datetime.date.today().isoformat(); added = updated = 0
+    for l in open(os.path.join(work, tfile)):
+        x = l.split()
+        if len(x) < 5: continue
+        v, k, t, m, before = map(int, x[:5]); name = '%d,%d,%d,%d' % (v, k, t, m)
+        bp = os.path.join(work, bdir, name + '.txt')
+        if not os.path.exists(bp): continue
+        built = nb(bp); sp = os.path.join(work, sdir, name + '.txt') if sdir else None
+        shrunk = nb(sp) if sp and os.path.exists(sp) else None
+        now = live.get((v, k, t, m))
+        if now not in (built, shrunk): continue
+        sk = (str(v), str(k), str(t), str(m)); old = idx.get(sk)
+        if old and int(old['ours']) <= now: continue
+        tree = json.load(open(os.path.join(work, bdir, name + '.json')))
+        store_recipe(work, name, tree, comps, by_hash)
+        con = describe(tree) + ('' if now == built else ' (recipe gives %d), then shrunk with wlsm2big' % built)
+        row = dict(kind='plain' if t == m else 'lottery', v=v, k=k, t=t, m=m, previous=before, ours=now, construction=con, uploaded=today)
+        if old: old.update({kk: str(vv) for kk, vv in row.items() if kk != 'previous'}); updated += 1
+        else: rows.append(row); idx[sk] = row; added += 1
+    save_lists(rows, comps)
+    return added, updated
 
 
 OWN_DERIVED = {}  # (v,k,t,m) -> size of our derived covering, filled in render()
@@ -193,9 +249,10 @@ def render(live, today):
 
 
 if __name__ == '__main__':
-    ap = argparse.ArgumentParser(); ap.add_argument('--work'); ap.add_argument('--vkt'); ap.add_argument('--vktm')
+    ap = argparse.ArgumentParser(); ap.add_argument('--work'); ap.add_argument('--built', action='append', default=[]); ap.add_argument('--vkt'); ap.add_argument('--vktm')
     a = ap.parse_args()
     vkt, vktm = live_tables(a)
     live = dict(vktm); live.update({(v, k, t, t): b for (v, k, t, m), b in vkt.items() if m == t})
     if a.work: print('added', add_uploaded(a.work, live), 'derived coverings')
+    for spec in a.built: print(spec, 'added/updated', add_built(a.work, live, spec))
     print(render(live, datetime.date.today().isoformat()))
