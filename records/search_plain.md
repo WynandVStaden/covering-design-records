@@ -315,7 +315,7 @@ Found by the weighted local search in [v1](../v1/) and [v2](../v2/), starting fr
 | 57 | 19 | 4 | 166 | 164 | 2 | v2 |  | current record |
 | 58 | 11 | 4 | 2305 | 2301 | 4 | v2 |  | beaten (now 2283) |
 | 58 | 13 | 4 | 1105 | 1023 | 82 | v2+wlsm2big |  | current record |
-| 58 | 14 | 4 | 786 | 732 | 54 | v2 |  | beaten (now 731) |
+| 58 | 14 | 4 | 786 | 732 | 54 | v2 |  | beaten (now 729) |
 | 58 | 15 | 4 | 602 | 576 | 26 | v2 |  | current record |
 | 58 | 19 | 4 | 178 | 177 | 1 | v1 |  | beaten (now 174) |
 | 59 | 12 | 4 | 1664 | 1660 | 4 | v2 |  | beaten (now 1659) |
