@@ -98,7 +98,9 @@ void save(const char* fn) {
     fclose(f);
 }
 
+bool noWeight = false;
 int main(int argc, char** argv) {
+    noWeight = getenv("NOWEIGHT") != nullptr;
     if (argc < 7) { fprintf(stderr, "usage: wls2 v k t b seconds seed [init|-] [tenure] [noise] [targetB]\n"); return 1; }
     v = atoi(argv[1]); k = atoi(argv[2]); t = atoi(argv[3]); b = atoi(argv[4]);
     double secs = atof(argv[5]); unsigned seed = atoi(argv[6]);
@@ -222,7 +224,7 @@ int main(int argc, char** argv) {
         each_with(B2, bin_, [&](u64 r, const int* S) { cover_inc(r, S, bi); });
         brk[(size_t)bi * 128 + bout] = 0;
         tabuUntil[(size_t)bi * 128 + bout] = step + tenure + (int)(rng() % 4);
-        for (u64 r : unc) w[r] += 1;
+        if (!noWeight) for (u64 r : unc) w[r] += 1;   // NOWEIGHT=1: plain tabu search on the uncovered count (baseline)
         long c = unc.size();
         if (c < best) best = c;
     }

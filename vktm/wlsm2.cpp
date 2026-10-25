@@ -157,7 +157,9 @@ void save(const char* fn) {
     fclose(f);
 }
 
+bool noWeight = false;
 int main(int argc, char** argv) {
+    noWeight = getenv("NOWEIGHT") != nullptr;
     if (argc < 8) { fprintf(stderr, "usage: wlsm2 v k t m b seconds seed [init|-] [cands=12] [tenure=5] [targetB]\n"); return 1; }
     v = atoi(argv[1]); k = atoi(argv[2]); t = atoi(argv[3]); m = atoi(argv[4]); b = atoi(argv[5]);
     double secs = atof(argv[6]); unsigned seed = atoi(argv[7]);
@@ -324,7 +326,7 @@ int main(int argc, char** argv) {
         M B2 = (B & ~BIT(bout)) | BIT(bin_); bm[bi] = B2;
         block_add_point(B2, bin_);
         tabuUntil[(size_t)bi * 128 + bout] = step + tenure + (int)(rng() % 3);
-        ++E;  // bump every uncovered m-set's weight by 1
+        if (!noWeight) ++E;  // bump every uncovered m-set's weight by 1 (NOWEIGHT=1: plain tabu baseline)
         if ((long)unc.size() < best) best = unc.size();
     }
     if (bestFull > 0) printf("SHRINK result: full cover with %d blocks\n", bestFull);
