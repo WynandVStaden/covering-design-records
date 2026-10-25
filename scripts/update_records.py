@@ -147,7 +147,9 @@ def add_built(work, live, spec):
         if old and int(old['ours']) <= now: continue
         tree = json.load(open(os.path.join(work, bdir, name + '.json')))
         store_recipe(work, name, tree, comps, by_hash)
-        con = describe(tree) + ('' if now == built else ' (recipe gives %d), then shrunk with wlsm2big' % built)
+        # plain constructed covers were only stripped of redundant blocks by zerocov, never given to wlsm2big
+        step = 'then shrunk with wlsm2big' if t < m else 'then stripped of redundant blocks'
+        con = describe(tree) + ('' if now == built else ' (recipe gives %d), %s' % (built, step))
         row = dict(kind='plain' if t == m else 'lottery', v=v, k=k, t=t, m=m, previous=before, ours=now, construction=con, uploaded=today)
         if old: old.update({kk: str(vv) for kk, vv in row.items() if kk != 'previous'}); updated += 1
         else: rows.append(row); idx[sk] = row; added += 1
