@@ -50,3 +50,11 @@ runs in shuffled order.
 Hypotheses from our earlier records (stated before the run): weighted beats tabu and annealing on plain entries;
 on lottery entries the t-level methods (weighted, tabu) beat direct scoring; on lottery entries weighting is not
 clearly better than tabu.
+
+## Amendment 1 (2026-10-25, before any result was examined)
+
+To narrow the confidence intervals (with 25 entries per stratum a 10% rate is only known to about ±12 points), the
+sample is extended to the first 75 entries per stratum with an available start cover, in the same random orders:
+300 plain and 300 lottery entries. Methods, budget, seeds and analysis are unchanged. The first 100 entries per kind
+were already running when this was decided; only run counts had been looked at, not outcomes. Runs are resumable, so
+the experiment may be paused and continued; interrupted runs are repeated from the start.
