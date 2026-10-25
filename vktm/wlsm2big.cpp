@@ -8,7 +8,8 @@
 //   - LEVEL_BUDGET / GROWTH / REVERT_SECS: revert to the last full cover (undo log) and delete another block when a
 //     deletion cannot be repaired; STALL stops after that many seconds without a new best cover
 //   - SAVE_SECS throttles saving; the best full cover is always saved at exit, also on SIGTERM/SIGINT
-//   - cost guard: refuses (exit 3) when one t-set flip would cost more than MAXFLIP (default 1e8) updates
+//   - cost guard: refuses (exit 3) when one t-set flip would cost more than MAXFLIP (default 1e8) updates, or when
+//     C(m,t) > 256 (the witness byte could not name the covered t-subset)
 // Build with -DCHECK for a brute-force recount of all bookkeeping every 2000 steps, -DPROF for phase timings.
 //
 // Settings used for the published re-shrinks: POOL=2000 POOL_REFRESH=500 NORESET=1 BUMP_GROWTH=30 LEVEL_BUDGET=3000
@@ -261,6 +262,8 @@ int main(int argc, char** argv) {
         double maxFlip = getenv("MAXFLIP") ? atof(getenv("MAXFLIP")) : 1e8;
         if (flipCost > maxFlip) { fprintf(stderr, "TOO_EXPENSIVE: flip cost %.3g > %.3g, use zerocov instead\n", flipCost, maxFlip); return 3; }
     }
+    // the witness byte holds a local index mod 256, so it names the unique covered t-subset only when C(m,t) <= 256
+    if (binom(m, t) > 256) { fprintf(stderr, "TOO_EXPENSIVE: C(m,t) = %llu > 256 overflows the witness byte, use zerocov instead\n", (unsigned long long)binom(m, t)); return 3; }
     build_rank_tables();
     Rm = m - t; LU.assign(binom(m, Rm), 0);
     subsets(m, Rm, [&](int* id) { int li = 0; uint32_t mk = 0; for (int i = 0; i < Rm; ++i) { li += (int)binom(id[i], i + 1); mk |= 1u << id[i]; } LU[li] = mk; });
