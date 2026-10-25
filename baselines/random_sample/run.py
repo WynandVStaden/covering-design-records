@@ -4,7 +4,7 @@ usage (inside WSL): python3 baselines/random_sample/run.py bindir sample.tsv out
   sample.tsv: stratum, v, k, t, m, table_value, start (path of the start cover)
 Writes outdir/results.tsv (entry, stratum, method, seed, table_value, start_size, best), resumable.
 """
-import csv, os, random, re, subprocess, sys, time
+import csv, os, random, re, subprocess, sys, threading, time
 from concurrent.futures import ThreadPoolExecutor
 
 
@@ -13,7 +13,8 @@ def main(bindir, sample, outdir, secs=120, seeds=3):
     done = set()
     if os.path.exists(res):
         for l in open(res).read().splitlines()[1:]:
-            if l: x = l.split('\t'); done.add((x[0], x[2], x[3]))
+            x = l.split('\t')
+            if len(x) == 7: done.add((x[0], x[2], x[3]))   # a garbled line means that run is repeated
     else:
         open(res, 'w').write('entry\tstratum\tmethod\tseed\ttable_value\tstart_size\tbest\n')
     rows = list(csv.DictReader(open(sample), delimiter='\t'))
@@ -23,6 +24,7 @@ def main(bindir, sample, outdir, secs=120, seeds=3):
         for m in (('weighted', 'tabu', 'annealing') if plain else ('weighted', 'tabu', 'direct')):
             for s in range(1, seeds + 1): jobs.append((r, m, s))
     random.Random(1).shuffle(jobs)
+    lock = threading.Lock()   # runs finish concurrently; without it two result lines can interleave
 
     def run(job):
         r, method, seed = job
@@ -47,7 +49,7 @@ def main(bindir, sample, outdir, secs=120, seeds=3):
                 [int(x) for x in re.findall(r'full cover with (\d+) blocks', out)]
         best = min(sizes) if sizes else b
         open(os.path.join(wd, 'log.txt'), 'w').write(out)
-        with open(res, 'a') as f:
+        with lock, open(res, 'a') as f:
             f.write('%s\t%s\t%s\t%d\t%s\t%d\t%d\n' % (name, r['stratum'], method, seed, r['table_value'], b, best))
 
     with ThreadPoolExecutor(11) as ex: list(ex.map(run, jobs))
