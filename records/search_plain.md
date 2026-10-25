@@ -1,6 +1,6 @@
 # Plain coverings C(v,k,t) found by search
 
-Found by the weighted local search in [v1](../v1/) and [v2](../v2/), starting from the previous record covering. "Previous" is the table value before our upload. Where v2 improved a record that v1 had set, the v1 value is shown. Entries stay listed after someone else beats them; "status" shows the table on 2026-10-24.
+Found by the weighted local search in [v1](../v1/) and [v2](../v2/), starting from the previous record covering. "Previous" is the table value before our upload. Where v2 improved a record that v1 had set, the v1 value is shown. Entries stay listed after someone else beats them; "status" shows the table on 2026-10-25.
 
 | v | k | t | previous | ours | gain | method | v1 value | status |
 |---|---|---|---|---|---|---|---|---|

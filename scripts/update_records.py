@@ -5,7 +5,7 @@ usage: python scripts/update_records.py [--work DIR] [--vkt FILE --vktm FILE]
   --work DIR   the local working folder holding lotto_new/ (SUMMARY.tsv, recipes/) and the component files.
                Every derived covering there whose size now equals the live table value (i.e. it has been
                uploaded) and that is not yet in data/derived.tsv is added: its recipe goes to derived/recipes/
-               and its components to derived/components/.
+               and its component list (sizes and sha1 hashes, not the files) to data/components.tsv.
   --vkt/--vktm use saved table files instead of downloading download_archive_vkt.aspx / download_archive.aspx.
 
 Writes RECORDS.md, records/search_plain.md, records/search_lottery.md, records/derived.md, records/components.md.
@@ -75,7 +75,7 @@ def add_uploaded(work, live):
     rows = read_tsv('derived.tsv'); have = {(r['v'], r['k'], r['t'], r['m']) for r in rows}
     comps = {r['file']: r for r in read_tsv('components.tsv')}
     by_hash = {r['sha1']: r['file'] for r in comps.values()}
-    os.makedirs(os.path.join(DER, 'recipes'), exist_ok=True); os.makedirs(os.path.join(DER, 'components'), exist_ok=True)
+    os.makedirs(os.path.join(DER, 'recipes'), exist_ok=True)
     today = datetime.date.today().isoformat(); added = 0
     for l in open(os.path.join(work, 'lotto_new', 'SUMMARY.tsv'), encoding='utf8').read().splitlines()[1:]:
         r = l.split('\t')
@@ -92,7 +92,8 @@ def add_uploaded(work, live):
 
 
 def store_recipe(work, name, tree, comps, by_hash):
-    """Copy every leaf cover of a recipe into derived/components (deduplicated by hash) and save the recipe."""
+    """Record every leaf cover of a recipe (size, origin, sha1; the file itself is not published, since coverings
+    downloaded from the Covering Repository are for personal use only) and save the recipe."""
     for leaf in leaves(tree, []):
         src = leaf['src'].replace('\\', '/'); data = open(os.path.join(work, src), 'rb').read()
         h = hashlib.sha1(data).hexdigest()
@@ -100,7 +101,6 @@ def store_recipe(work, name, tree, comps, by_hash):
             nb = sum(1 for x in data.splitlines() if x.strip())
             base = 'C_%d_%d_%d_%d_%d' % (leaf['v'], leaf['k'], leaf['t'], leaf['m'], nb); fn = base + '.txt'; i = 2
             while fn in comps: fn = '%s_%d.txt' % (base, i); i += 1
-            open(os.path.join(DER, 'components', fn), 'wb').write(data)
             origin = next((o for p, o in ORIGINS if src.startswith(p)), 'unknown')
             comps[fn] = dict(file=fn, v=leaf['v'], k=leaf['k'], t=leaf['t'], m=leaf['m'], blocks=nb, origin=origin, sha1=h)
             by_hash[h] = fn
@@ -130,7 +130,7 @@ def add_built(work, live, spec):
     parts = spec.split(':'); bdir, tfile = parts[0], parts[1]; sdir = parts[2] if len(parts) > 2 else None
     rows = read_tsv('derived.tsv'); idx = {(r['v'], r['k'], r['t'], r['m']): r for r in rows}
     comps = {r['file']: r for r in read_tsv('components.tsv')}; by_hash = {r['sha1']: r['file'] for r in comps.values()}
-    os.makedirs(os.path.join(DER, 'recipes'), exist_ok=True); os.makedirs(os.path.join(DER, 'components'), exist_ok=True)
+    os.makedirs(os.path.join(DER, 'recipes'), exist_ok=True)
     nb = lambda p: sum(1 for x in open(p, 'rb') if x.strip())
     today = datetime.date.today().isoformat(); added = updated = 0
     for l in open(os.path.join(work, tfile)):
@@ -208,8 +208,8 @@ def render(live, today):
         tree = json.load(open(os.path.join(DER, 'recipes', name + '.json')))
         files = sorted({l['src'].split('/')[-1] for l in leaves(tree, [])}, key=lambda f: [int(x) for x in f[2:-4].split('_')])
         for f in files: used[f].append(name)
-        cl = ', '.join('[C(%s,%s,%s,%s)=%s](../derived/components/%s)' % (comps[f]['v'], comps[f]['k'], comps[f]['t'],
-                                                                          comps[f]['m'], comps[f]['blocks'], f) for f in files)
+        cl = ', '.join('C(%s,%s,%s,%s)=%s' % (comps[f]['v'], comps[f]['k'], comps[f]['t'], comps[f]['m'], comps[f]['blocks'])
+                       for f in files)
         st = status(ours, live.get((v, k, t, m))); held += st == 'current record'
         rows.append((v, k, t, m, prev, ours, prev - ours, r['construction'], cl,
                      '[recipe](../derived/recipes/%s.json)' % name, st))
@@ -217,8 +217,9 @@ def render(live, today):
     W('records/derived.md', '# Derived coverings\n\n'
       'Built from published coverings by the constructions described in [derived/](../derived/README.md): '
       'products over a split of the points, complement duality and one-point extensions. Each entry names every '
-      'component covering used; the files are in [derived/components](../derived/components/) and every one is also on '
-      'the Covering Repository (at this size or better). Rebuild any entry with `python derived/build.py v,k,t,m`. '
+      'component covering used; every one is on the Covering Repository (at this size or better). The component files '
+      'are not included here: download them from the Repository, check them against the sha1 hashes in '
+      '[data/components.tsv](../data/components.tsv), then rebuild with `python derived/build.py v,k,t,m`. '
       'Plain coverings are the case m = t. "Status" shows the table on %s.\n\n' % today +
       table(['v', 'k', 't', 'm', 'previous', 'ours', 'gain', 'construction', 'components', 'recipe', 'status'], rows))
 
@@ -226,7 +227,7 @@ def render(live, today):
     for f, c in sorted(comps.items(), key=lambda x: [int(y) for y in x[0][2:-4].split('_')]):
         now = live.get(tuple(int(c[x]) for x in ('v', 'k', 't', 'm')))
         site = 'equal' if now == int(c['blocks']) else ('site has %d' % now if now is not None else 'not in table')
-        rows.append(('[%s](../derived/components/%s)' % (f, f), c['blocks'], c['origin'], site, len(used[f]),
+        rows.append((f, c['blocks'], c['origin'], site, len(used[f]),
                      ', '.join(used[f][:12]) + (' ...' if len(used[f]) > 12 else '')))
     W('records/components.md', '# Component coverings\n\n'
       'Every covering used as a building block by a derived covering, where it comes from, and how it compares with the '

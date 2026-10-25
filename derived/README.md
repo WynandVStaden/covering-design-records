@@ -32,7 +32,7 @@ Partition ("sum") constructions and the standard point-addition construction are
 | Path | Content |
 |---|---|
 | `recipes/v,k,t,m.json` | the construction tree for one derived covering; leaves point to files in `components/` |
-| `components/C_v_k_t_m_b.txt` | a component covering with b blocks, one block per line |
+| `components/C_v_k_t_m_b.txt` | not published: download each component from the Covering Repository (for personal use), save it here under this name and check its sha1 against `data/components.tsv` |
 | `build.py` | rebuilds a derived covering from its recipe and checks the hypothesis of every step |
 
 ## Rebuild and check

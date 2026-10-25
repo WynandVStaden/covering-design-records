@@ -5,3 +5,4 @@ shrink_cover_*
 wls_cover_*
 wls_near_*
 __pycache__/
+derived/components/

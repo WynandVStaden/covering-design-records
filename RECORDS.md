@@ -1,6 +1,6 @@
 # Records
 
-Coverings found with this code and accepted by the [Covering Repository](https://www.coveringrepository.com). On 2026-10-24, **998 entries hold our covering**.
+Coverings found with this code and accepted by the [Covering Repository](https://www.coveringrepository.com). On 2026-10-25, **998 entries hold our covering**.
 
 | list | how they were found | current records | listed |
 |---|---|---|---|

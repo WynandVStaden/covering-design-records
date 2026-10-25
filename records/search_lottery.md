@@ -1,6 +1,6 @@
 # Lottery coverings C(v,k,t,m) found by search
 
-Found by [wlsm2](../vktm/) starting from the previous record covering, and verified exactly (CP-SAT infeasibility proof or exhaustive `mverify`). "Status" shows the table on 2026-10-24.
+Found by [wlsm2](../vktm/) starting from the previous record covering, and verified exactly (CP-SAT infeasibility proof or exhaustive `mverify`). "Status" shows the table on 2026-10-25.
 
 | v | k | t | m | previous | ours | gain | method | status |
 |---|---|---|---|---|---|---|---|---|

@@ -3,7 +3,7 @@
 usage: python derived/build.py v,k,t,m [out.txt]
        python derived/build.py --all          (rebuild and check every recipe, write nothing)
 
-A recipe (derived/recipes/v,k,t,m.json) is a tree. Its leaves are component coverings in derived/components/,
+A recipe (derived/recipes/v,k,t,m.json) is a tree. Its leaves are component coverings in derived/components/ (not published; download them from the Covering Repository),
 each also published on the Covering Repository. Every inner node is one construction step whose hypothesis is
 asserted while rebuilding (M = any m-subset of the points):
 
