@@ -2,6 +2,8 @@
 
 This repository holds the code behind our records on the [Covering Repository](https://www.coveringrepository.com): plain coverings C(v,k,t) and lottery coverings C(v,k,t,m) found by weighted local search, and derived coverings built from published coverings by explicit constructions. [RECORDS.md](RECORDS.md) has the current counts and links to every list; each entry shows its previous value, its method, and whether it is still the record.
 
+The paper describing the methods, with a pre-registered comparison on a random sample of table entries, is in [`paper/`](paper/).
+
 A (v,k,t) covering design is a set of k-element blocks drawn from v points such that every t-element subset of the points lies in at least one block. C(v,k,t) is the smallest number of blocks possible. For most parameters the exact value is unknown, so the public tables record the best covering anyone has found.
 
 ## Repository layout
@@ -15,6 +17,8 @@ A (v,k,t) covering design is a set of k-element blocks drawn from v points such 
 | [`records/`](records/) | The record lists: search records (plain and lottery), derived coverings, and their components. |
 | [`data/`](data/) | The same lists as tab-separated files, the source the Markdown is generated from. |
 | [`scripts/`](scripts/) | `verify.py` (independent checker for (v,k,t)), `table.py` (reads the site's table archive), `update_records.py` (regenerates the lists against the live tables), `zerocov.cpp` (exhaustive check and zero-coverage cleanup), `reshrink_batch.py` (batch shrinking). |
+| [`baselines/`](baselines/) | `sa_cover.cpp` (simulated annealing for comparison) and [`random_sample/`](baselines/random_sample/): the pre-registered random-sample comparison (protocol, sample, runner, raw results, analysis). |
+| [`paper/`](paper/) | The paper (LaTeX source and PDF) and a map from its sections to the code and data. |
 
 ## Method (v1)
 
@@ -85,6 +89,8 @@ What we measured while tuning it on record covers:
 
 This produced 75 lottery records, all verified exactly (e.g. C(78,9,3,4) 672 → 647, C(74,8,3,4) 784 → 765); see [records/search_lottery.md](records/search_lottery.md).
 
+**Weighting on lottery coverings.** On a random sample of 300 lottery entries not held by us (2 minutes, 3 seeds each), wlsm2 with the weighting switched off (`NOWEIGHT=1`) improved 13 entries, wlsm2 as is 4, and wlsm 8. At these settings and a two-minute budget, weighting combined with wlsm2's t-level score estimates did worst; for lottery coverings, try `NOWEIGHT=1`. See [baselines/random_sample/](baselines/random_sample/).
+
 **Limits.** wlsm2 stores about 14 bytes per m-subset, so it needs C(v,m) up to roughly 10^9 at most on a 16 GB machine. Most lottery records have far larger m: the median entry held by the table's largest contributor is C(52,5,5,19), with 7.6 × 10^13 m-subsets. Those need a method that never enumerates m-subsets (for example lazy constraint generation with a fast exact checker), which we have not built.
 
 ## wlsm2big: the lottery solver for large covers
@@ -125,8 +131,9 @@ covers gain most: the product construction covers many m-subsets several times. 
 Many more records come from combining published coverings: products over a split of the points, complement duality and
 one-point extensions ([derived/README.md](derived/README.md)). A scan of the whole table finds entries that some
 combination of smaller published coverings beats, and the covering is then built explicitly. For each one we publish the
-recipe and every component covering, so anyone can rebuild it with `python derived/build.py v,k,t,m` and trace each
-component back to the Covering Repository ([records/components.md](records/components.md)). They are
+recipe and identify every component covering by its parameters, size and sha1 hash; the components themselves are
+not redistributed (coverings downloaded from the Covering Repository are for personal use), but each can be downloaded
+there and the covering rebuilt with `python derived/build.py v,k,t,m` ([records/components.md](records/components.md)). They are
 listed separately from the search records because they come from known constructions, not from search.
 
 ## Updating the lists
