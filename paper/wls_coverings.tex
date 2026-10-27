@@ -2,6 +2,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{booktabs}
+\usepackage{float}
 \usepackage{hyperref}
 
 \newtheorem{lemma}{Lemma}
@@ -696,7 +697,10 @@ published coverings served as starting points and components. The code was writt
 
 \section{Tuning the lottery search}\label{app:tuning}
 
-\begin{table}[h]
+Table~\ref{tab:tuning} lists the changes we tried while tuning the lottery search of Section~\ref{sec:lottery} on
+record coverings, with their effect. These are batch observations on entries we chose, not controlled comparisons.
+
+\begin{table}[H]
 \centering
 \begin{tabular}{p{7.2cm}p{6.6cm}}
 \toprule
@@ -711,6 +715,7 @@ restart a level with another deleted block & no measurable gain \\
 \bottomrule
 \end{tabular}
 \caption{Effects measured while tuning the lottery search.}
+\label{tab:tuning}
 \end{table}
 
 \section{Control of the large-cover search}\label{app:big}
@@ -737,7 +742,7 @@ overrunning runs and kept the last saved covering.
 \begin{thebibliography}{99}
 
 \bibitem{bertolo2004} R.~Bertolo, I.~Bluskov and H.~H\"am\"al\"ainen, Upper bounds on the general covering number
-$C_\lambda(v,k,t,m)$, \emph{J. Combin. Des.} 12(5) (2004) 362--380.
+$C_\lambda(v,k,t,m)$, \emph{J. Combin. Des.} 12(5) (2004) 362--380. doi:10.1002/jcd.20019.
 
 \bibitem{batevanrees1998} J.~A. Bate and G.~H.~J. van Rees, Lotto designs, \emph{J. Combin. Math. Combin. Comput.}
 28 (1998) 15--39.
@@ -757,7 +762,7 @@ $C_\lambda(v,k,t,m)$, \emph{J. Combin. Des.} 12(5) (2004) 362--380.
 doi:10.5281/zenodo.19735294. See also \url{https://dmgordon.org/covering-designs/}.
 
 \bibitem{gordonstinson2007} D.~M. Gordon and D.~R. Stinson, Coverings, in C.~J. Colbourn and J.~H. Dinitz (eds.),
-\emph{Handbook of Combinatorial Designs}, 2nd ed., Chapman \& Hall/CRC, 2007, Chapter VI.11.
+\emph{Handbook of Combinatorial Designs}, 2nd ed., Chapman \& Hall/CRC, 2007, Chapter VI.11, 365--372.
 
 \bibitem{li1999} B.~P.~C. Li, \emph{Some Results on Lotto Designs}, PhD thesis, University of Manitoba, 1999.
 \url{http://hdl.handle.net/1993/1660}.
@@ -769,13 +774,13 @@ doi:10.5281/zenodo.19735294. See also \url{https://dmgordon.org/covering-designs
 cover problem, \emph{IEEE Trans. Cybern.} 54(3) (2024) 1403--1416. doi:10.1109/TCYB.2022.3199147.
 
 \bibitem{margot2003} F.~Margot, Small covering designs by branch-and-cut, \emph{Math. Program.} 94(2--3) (2003)
-207--220.
+207--220. doi:10.1007/s10107-002-0316-z.
 
 \bibitem{millsmullin1992} W.~H. Mills and R.~C. Mullin, Coverings and packings, in J.~H. Dinitz and D.~R. Stinson
 (eds.), \emph{Contemporary Design Theory}, Wiley, 1992, 371--399.
 
 \bibitem{montecalvo2012} F.~Montecalvo, Some constructions of general covering designs, \emph{Electron. J. Combin.}
-19(3) (2012) P28. arXiv:1205.4994.
+19(3) (2012) P28. doi:10.37236/2606.
 
 \bibitem{morris1993} P.~Morris, The breakout method for escaping from local minima, in \emph{Proc. AAAI-93}, 1993,
 40--45.
@@ -789,13 +794,13 @@ doi:10.1016/j.ejor.2015.05.038.
 
 \bibitem{probsat2012} A.~Balint and U.~Sch\"oning, Choosing probability distributions for stochastic local search and
 the role of make versus break, in \emph{Theory and Applications of Satisfiability Testing -- SAT 2012}, Lecture Notes
-in Computer Science 7317, Springer, 2012, 16--29.
+in Computer Science 7317, Springer, 2012, 16--29. doi:10.1007/978-3-642-31612-8\_3.
 
 \bibitem{saps2002} F.~Hutter, D.~A.~D. Tompkins and H.~H. Hoos, Scaling and probabilistic smoothing: efficient dynamic
 local search for SAT, in \emph{Principles and Practice of Constraint Programming (CP 2002)}, LNCS 2470, Springer,
 2002, 233--248. doi:10.1007/3-540-46135-3\_16.
 
-\bibitem{schonheim1964} J.~Sch\"onheim, On coverings, \emph{Pacific J. Math.} 14(4) (1964) 1405--1411.
+\bibitem{schonheim1964} J.~Sch\"onheim, On coverings, \emph{Pacific J. Math.} 14(4) (1964) 1405--1411. doi:10.2140/pjm.1964.14.1405.
 
 \bibitem{repo} W.~van Staden, covering-design-records,
 \url{https://github.com/WynandVStaden/covering-design-records}.
